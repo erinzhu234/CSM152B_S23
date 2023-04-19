@@ -33,7 +33,7 @@ module alu16(
     //increment addition with 1
     //invert input xor all 1's
     //shifts = grant
-    //set on less than or equal ??
+    //set on less than or equal: use subtraction and check the sign of the result
     
     
 endmodule
