@@ -3,18 +3,22 @@ module LSR(
   input [15:0] A, 
   input [15:0] B,
   output reg [15:0] A_shifted,
-  output [1:0] overflow);
+  output reg [1:0] overflow);
+  integer i;
+  integer j;
   
-    A_shifted = A;
-    
-    For(int j=0;j<B;j++){
-        For(int i=0;i<15;i++)
-            A_shifted[i+1] = A_shifted[i];
+  always @(A,B)
+    begin 
+      
+	  A_shifted = A;
+      overflow = 1'b0;
+  
+      for(j=0; j<B; j=j+1)begin
+        for(i=1; i<=15; i=i+1)
+          A_shifted[i-1] = A_shifted[i];  
         A_shifted[15] = 0;
-    }
-  
-    if(A_shifted[15] != A[15])
-	   overflow = 1'b1;
-    else
-        overflow = 1'b0;
+      
+      end
+    end 
+
 endmodule 
