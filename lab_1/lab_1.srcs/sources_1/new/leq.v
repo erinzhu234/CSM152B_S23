@@ -38,8 +38,8 @@ module leq(
     
     subtraction leq_sub(.r1(r1), .r2(r2), .cin(0), .result(sub_res), .cout(sub_cout), .of(of1));
     decrement leq_dec(.in(sub_res), .out(result), .cout(inv_res), .of(of2));
-    OR(of, of1, of2);
+    or(of, of1, of2);
     
-    AND(result, 1, inv_res[15]);
+    and(result, 1, inv_res[15]);
     
 endmodule

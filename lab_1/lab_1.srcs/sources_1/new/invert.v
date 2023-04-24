@@ -29,22 +29,22 @@ module invert(
     
     wire [15:0] out;
     
-    NOT(out[0], in[0]);
-    NOT(out[1], in[1]);
-    NOT(out[2], in[2]);
-    NOT(out[3], in[3]);
-    NOT(out[4], in[4]);
-    NOT(out[5], in[5]);
-    NOT(out[6], in[6]);
-    NOT(out[7], in[7]);
-    NOT(out[8], in[8]);
-    NOT(out[9], in[9]);
-    NOT(out[10], in[10]);
-    NOT(out[11], in[11]);
-    NOT(out[12], in[12]);
-    NOT(out[13], in[13]);
-    NOT(out[14], in[14]);
-    NOT(out[15], in[15]);
+    not(out[0], in[0]);
+    not(out[1], in[1]);
+    not(out[2], in[2]);
+    not(out[3], in[3]);
+    not(out[4], in[4]);
+    not(out[5], in[5]);
+    not(out[6], in[6]);
+    not(out[7], in[7]);
+    not(out[8], in[8]);
+    not(out[9], in[9]);
+    not(out[10], in[10]);
+    not(out[11], in[11]);
+    not(out[12], in[12]);
+    not(out[13], in[13]);
+    not(out[14], in[14]);
+    not(out[15], in[15]);
     
     addition inv_add(.r1(out), .r2(1), .cin(0), .result(result), .cout(cout), .of(of));
     

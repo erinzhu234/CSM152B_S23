@@ -44,8 +44,8 @@ module alu16(
     
     subtraction my_subtraction(.r1(a), .r2(b), .cin(0), .result(sub), .cout(cout), .of(sub_of));
     addition my_addition(.r1(a), .r2(b), .cin(0), .result(add), .cout(cout), .of(add_of));
-    bOR my_bOR(.a(a), .b(b), .result(bor));
-    bAND my_bAND(.a(a), .b(b), .result(band));
+    bitwiseOR my_bOR(.A(a), .B(b), .result(bor));
+    bitwiseAND my_bAND(.A(a), .B(b), .result(band));
     decrement my_decrement(.in(a), .out(dec), .cout(cout), .of(dec_of));
     increment my_increment(.in(a), .out(inc), .cout(cout), .of(inc_of));
     invert my_invert(.in(a), .result(inv), .cout(cout), .of(inv_of));

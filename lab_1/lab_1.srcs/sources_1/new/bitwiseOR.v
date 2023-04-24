@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module bOR(
+module bitwiseOR(
     input [15:0] A,
     input [15:0] B,
     output [15:0] result);

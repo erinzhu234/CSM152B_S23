@@ -40,6 +40,6 @@ module subtraction(
     
     addition dis_add(.r1(r1), .r2(r2_neg), .cin(cin), .result(result), .cout(cout), .of(of2));
     
-    OR(of, of1, of2);
+    or(of, of1, of2);
     
 endmodule
