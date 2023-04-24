@@ -25,15 +25,7 @@ module alu16(
     output of,zero,[15:0] s
     );
     
-    //subtraction addition with b as invert b + 1
-    //addition addition u0(.r1(a), .r2(b), .cin(0), .of(of), .result(s), .cout(of));
-    //bitwiseOR 16 or gates, make a separate file just like addition
-    //bitwiseAND same as above but and gates
-    //decrement subtration with 1
-    //increment addition with 1
-    //invert input xor all 1's
-    //shifts = grant
-    //set on less than or equal: use subtraction and check the sign of the result
+    
     
     
     
