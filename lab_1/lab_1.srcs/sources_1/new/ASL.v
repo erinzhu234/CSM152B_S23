@@ -3,13 +3,12 @@ module ASL(
   input [15:0] A, 
   input [15:0] B,
   output reg [15:0] A_shifted,
-  output reg [1:0] overflow);
+  output reg overflow);
   integer i;
   integer j;
  
-  always @(A,B)
+    always@(A,B)
     begin
- 
       A_shifted = A;
       
       for(j=0; j<B; j=j+1)begin
@@ -22,7 +21,6 @@ module ASL(
         overflow = 1'b1;
 	  else 
  	  	overflow = 1'b0;
-      
-	end
+    end
   
 endmodule 

@@ -50,6 +50,10 @@ module alu16(
     increment my_increment(.in(a), .out(inc), .cout(cout), .of(inc_of));
     invert my_invert(.in(a), .result(inv), .cout(cout), .of(inv_of));
     // TODO: add the shifts
+    ASL my_asl(.A(a), .B(b), .A_shifted(asl), .overflow(asl_of));
+    ASR my_asr(.A(a), .B(b), .A_shifted(asr), .overflow(asr_of));
+    LSL my_lsl(.A(a), .B(b), .A_shifted(lsl));
+    LSR my_lsr(.A(a), .B(b), .A_shifted(lsr));
     leq my_leq(.r1(a), .r2(b), .result(sleq), .of(sleq_of));
     
     // mux every bit
@@ -91,7 +95,7 @@ module alu16(
                                                             
     m161 s_mux9(.D0(sub[9]), .D1(add[9]), .D2(bor[9]), .D3(band[9]), .D4(dec[9]), .D5(inc[9]), .D6(inv[9]), .D7(asl[9]), .D8(asr[9]), 
                .D9(lsl[9]), .D10(lsr[9]), .D11(sleq[9]), .D12(0), .D13(0), .D14(0), .D15(0), 
-               .S(alu), .Y(s[0]));
+               .S(alu), .Y(s[9]));
                                                                            
     m161 s_mux10(.D0(sub[10]), .D1(add[10]), .D2(bor[10]), .D3(band[10]), .D4(dec[10]), .D5(inc[10]), .D6(inv[10]), .D7(asl[10]), .D8(asr[10]), 
                .D9(lsl[10]), .D10(lsr[10]), .D11(sleq[10]), .D12(0), .D13(0), .D14(0), .D15(0), 

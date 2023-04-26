@@ -32,13 +32,33 @@ module alu16_tb(
     alu16 uut(.a(a), .b(b), .alu(alu), .of(of), .zero(zero), .s(s));
     
     initial begin
-        a=0;
-        b=0;
-        alu=0;
+        a=16'b0000000000000011;
+        b=9;
         #10
-        a=4'b1011;
-        b=4'b1001;
+        alu = 0; 
         #10
+        alu = 1; 
+        #10
+        alu = 2; 
+        #10
+        alu = 3;
+        #10
+        alu =4; 
+        #10
+        alu=5;
+        #10
+        alu=6;
+        #10
+        alu=7; 
+        #10
+        alu=8; 
+        #10
+        alu=9; 
+        #10
+        alu=10;
+        #10
+        alu=11; 
+        #10 
         $stop;
     end
 
