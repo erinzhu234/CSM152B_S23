@@ -23,7 +23,7 @@
 module leq(
     input [15:0] r1,
     input [15:0] r2,
-    output result, 
+    output [15:0] result, 
     output of
     );
     
@@ -33,13 +33,28 @@ module leq(
     // r1 - r2 - 1 < 0
     
     wire [15:0] sub_res;
-    wire [15:0] inv_res;
-    wire sub_cout, inv_cout, of1, of2;
+    wire [15:0] dec_res;
+    wire sub_cout, dec_cout, of1, of2;
     
     subtraction leq_sub(.r1(r1), .r2(r2), .cin(0), .result(sub_res), .cout(sub_cout), .of(of1));
-    decrement leq_dec(.in(sub_res), .out(result), .cout(inv_res), .of(of2));
+    decrement leq_dec(.in(sub_res), .out(dec_res), .cout(dec_cout), .of(of2));
     or(of, of1, of2);
     
-    and(result, 1, inv_res[15]);
+    and(result[0], 1, dec_res[15]);
+    not(result[1], 1);
+    not(result[2], 1);
+    not(result[3], 1);
+    not(result[4], 1);
+    not(result[5], 1);
+    not(result[6], 1);
+    not(result[7], 1);
+    not(result[8], 1);
+    not(result[9], 1);
+    not(result[10], 1);
+    not(result[11], 1);
+    not(result[12], 1);
+    not(result[13], 1);
+    not(result[14], 1);
+    not(result[15], 1);
     
 endmodule

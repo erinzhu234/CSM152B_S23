@@ -30,7 +30,6 @@ module subtraction(
     );
     
     wire [15:0] r2_inv;
-    wire [15:0] r2_neg;
     
     wire of1, of2;
     
@@ -38,7 +37,7 @@ module subtraction(
     
     invert dis_inv(.in(r2), .result(r2_inv), .cout(inv_cout), .of(of1));
     
-    addition dis_add(.r1(r1), .r2(r2_neg), .cin(cin), .result(result), .cout(cout), .of(of2));
+    addition dis_add(.r1(r1), .r2(r2_inv), .cin(cin), .result(result), .cout(cout), .of(of2));
     
     or(of, of1, of2);
     
