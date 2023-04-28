@@ -32,33 +32,107 @@ module alu16_tb(
     alu16 uut(.a(a), .b(b), .alu(alu), .of(of), .zero(zero), .s(s));
     
     initial begin
-        a=16'b0000000000000011;
-        b=9;
+        a=0;
+        b=0;
         #10
-        alu = 0; 
+        alu = 0; //subtraction
+        // negative negative
+        a=-2;
+        b=-3;
         #10
-        alu = 1; 
+        // postive positive
+        a=2;
+        b=3;
         #10
-        alu = 2; 
+        // negative positive
+        a=-2;
+        b=3;
         #10
-        alu = 3;
+        // positive negative
+        a=2;
+        b=-3;
         #10
-        alu =4; 
+        // overflow 
+        a=16'b1000000000000000;
+        b=16'b0000000000000001;
         #10
-        alu=5;
+        // zero
+        a=1;
+        b=1;
         #10
-        alu=6;
+        alu = 1; //addition
+        // negative negative
+        a=-2;
+        b=-3;
         #10
-        alu=7; 
+        // postive positive
+        a=2;
+        b=3;
         #10
-        alu=8; 
+        // negative positive
+        a=-2;
+        b=3;
         #10
-        alu=9; 
+        // positive negative
+        a=2;
+        b=-3;
         #10
-        alu=10;
+        // overflow 
+        a=16'b1000000000000000;
+        b=16'b1111111111111111;
         #10
-        alu=11; 
-        #10 
+        alu = 2; //bitwise or
+        a=4'b1010;
+        b=4'b1100;
+        #10
+        alu = 3; //bitwise and
+        a=4'b1010;
+        b=4'b1100;
+        #10
+        alu =4; //decrement
+        a=5;
+        #10
+        alu=5; //increment
+        #10
+        alu=6; //invert
+        a=1;
+        #10
+        //overflow
+        a=16'b0000000000000000;
+        #10
+        alu=7; //asl
+        a=4'b1111;
+        b=2;
+        #10
+        //overflow
+        a=16'b1000000000000000;
+        b=2;
+        #10
+        alu=8; //asr
+        a=4'b1111;
+        b=2;
+        #10
+        alu=9; //lsl
+        #10
+        alu=10; //lsr
+        #10
+        alu=11; //set le
+        //a<b
+        a=1;
+        b=2;
+        #10
+        //a>b
+        a=2;
+        b=1;
+        #10
+        //a=b
+        a=2;
+        b=2;
+        #10
+        //overflow
+        a=16'b1000000000000000;
+        b=16'b0000000000000001;
+        #10
         $stop;
     end
 
