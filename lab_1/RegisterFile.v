@@ -21,13 +21,12 @@ module RegisterFile(
     else begin
       
       if (wren == 1) begin
-        reg_file[rw] <= busW;
+        reg_file[rw]= busW;
       end
       
-      busA <= reg_file[ra];
-      busB <= reg_file[rb];
-      
     end
+    busA = reg_file[ra];
+    busB = reg_file[rb];
   end
   
 endmodule

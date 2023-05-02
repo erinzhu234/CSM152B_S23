@@ -30,6 +30,19 @@ module alu16_tb(
     wire [15:0] s;
     
     alu16 uut(.a(a), .b(b), .alu(alu), .of(of), .zero(zero), .s(s));
+
+    // variables for register file
+    reg clk = 0;
+    always #5 begin
+      clk = ~clk;
+    end
+      
+    reg [4:0] ra, rb, rw;
+    reg wren, rst;
+    reg [15:0] busW;
+    wire [15:0] busA, busB;
+      
+    RegisterFile my_regfile(.ra(ra), .rb(rb), .rw(rw), .wren(wren), .clk(clk), .rst(rst), .busW(busW), .busA(busA), .busB(busB));
     
     initial begin
         a=0;
