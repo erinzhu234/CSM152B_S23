@@ -123,7 +123,7 @@ module alu16(
    
     
     m161 of_mux(.D0(sub_of), .D1(add_of), .D2(0), .D3(0), .D4(dec_of), .D5(inc_of), .D6(inv_of), .D7(asl_of), 
-                .D8(asr_of), .D9(0), .D10(0), .D11(sleq_of), .D12(0), .D13(0), .D14(0), .D15(0), 
+                .D8(asr_of), .D9(0), .D10(0), .D11(0), .D12(0), .D13(0), .D14(0), .D15(0), 
                 .S(alu), .Y(of));
     zero my_zero(.a(s), .z(zero));
     

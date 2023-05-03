@@ -47,7 +47,7 @@ module leq(
     or(of, of1, of2);
     
     wire res_one;
-    mux21 leq_mux(.Y(res_one), .D0(dec_res[15]), .D1(res_diff), .S(diff));
+    m21 leq_mux(.Y(res_one), .D0(dec_res[15]), .D1(res_diff), .S(diff));
     
     and(result[0], 1, res_one);
     not(result[1], 1);
