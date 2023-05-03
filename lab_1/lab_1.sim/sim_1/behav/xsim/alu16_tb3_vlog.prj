@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab_1.srcs/sources_1/new/ASL.v" \
+"../../../../lab_1.srcs/sources_1/new/ASR.v" \
+"../../../../lab_1.srcs/sources_1/new/LSL.v" \
+"../../../../lab_1.srcs/sources_1/new/LSR.v" \
+"../../../../RegisterFile.v" \
+"../../../../lab_1.srcs/sources_1/new/addbit.v" \
+"../../../../lab_1.srcs/sources_1/new/addition.v" \
+"../../../../lab_1.srcs/sources_1/new/alu16.v" \
+"../../../../lab_1.srcs/sources_1/new/bitwiseAND.v" \
+"../../../../lab_1.srcs/sources_1/new/bitwiseOR.v" \
+"../../../../lab_1.srcs/sources_1/new/decrement.v" \
+"../../../../lab_1.srcs/sources_1/new/increment.v" \
+"../../../../lab_1.srcs/sources_1/new/invert.v" \
+"../../../../lab_1.srcs/sources_1/new/leq.v" \
+"../../../../lab_1.srcs/sources_1/new/m161.v" \
+"../../../../lab_1.srcs/sources_1/new/m21.v" \
+"../../../../lab_1.srcs/sources_1/new/m41.v" \
+"../../../../lab_1.srcs/sources_1/new/subtraction.v" \
+"../../../../lab_1.srcs/sources_1/new/zero.v" \
+"../../../../lab_1.srcs/sim_1/new/alu16_tb3.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
