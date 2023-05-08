@@ -42,8 +42,11 @@ module sm(
     always @(*) begin
         if(rst)begin
             current = MG;
+            next=MG;
             timer = 0;
             swap = 1;
+            main=0;
+            side=0;
         end
         else
             current = next;
@@ -56,7 +59,7 @@ module sm(
                     swap=0;
                     timer = 0;
                 end
-                else if(timer == 6) begin
+                else if(timer >= 6) begin
                     swap =1;
                     side=1;
                     main=0;
@@ -71,7 +74,7 @@ module sm(
                     swap=0;
                     timer=0;
                 end
-                else if(timer == 3)begin
+                else if(timer >= 3)begin
                     swap=1;
                     main=1;
                     side=0;
@@ -83,11 +86,14 @@ module sm(
                     swap=0;
                     timer=0;
                 end
-                else if(timer == 2)begin
+                else if(timer >= 2)begin
                     if(main)
                         next=MG;
                     else if(side)
-                        next=SG;
+                        if(ped)
+                            next=PED;
+                        else
+                            next=SG;
                 end           
             end
             PED : begin
@@ -95,7 +101,7 @@ module sm(
                     swap=0;
                     timer=0;
                 end
-                else if(timer == 3)begin
+                else if(timer >= 3)begin
                     swap =1;
                     next=SG;
                 end             
@@ -105,7 +111,7 @@ module sm(
                     swap=0;
                     timer=0;
                 end
-                else if(timer == 6)begin
+                else if(timer >= 6)begin
                     swap =1;
                     next=YLW;
                 end         
@@ -115,7 +121,7 @@ module sm(
                     swap=0;
                     timer=0;
                 end
-                else if(timer == 3)begin
+                else if(timer >= 3)begin
                     swap =1;
                     next=YLW;
                 end
