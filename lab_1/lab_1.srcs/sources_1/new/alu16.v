@@ -101,7 +101,7 @@ module alu16(
                .D9(lsl[10]), .D10(lsr[10]), .D11(sleq[10]), .D12(0), .D13(0), .D14(0), .D15(0), 
                .S(alu), .Y(s[10]));
                
-    m161 s_mux11(.D0(sub[11]), .D1(add[11]), .D2(bor[11]), .D3(band[11]), .D4(dec[11]), .D5(inc[11]), .D6(inv[11]), .D7(asl[11]), .D8(asr[1]), 
+    m161 s_mux11(.D0(sub[11]), .D1(add[11]), .D2(bor[11]), .D3(band[11]), .D4(dec[11]), .D5(inc[11]), .D6(inv[11]), .D7(asl[11]), .D8(asr[11]), 
                .D9(lsl[11]), .D10(lsr[11]), .D11(sleq[11]), .D12(0), .D13(0), .D14(0), .D15(0), 
                .S(alu), .Y(s[11]));
                               
@@ -123,7 +123,7 @@ module alu16(
    
     
     m161 of_mux(.D0(sub_of), .D1(add_of), .D2(0), .D3(0), .D4(dec_of), .D5(inc_of), .D6(inv_of), .D7(asl_of), 
-                .D8(asr_of), .D9(0), .D10(0), .D11(sleq_of), .D12(0), .D13(0), .D14(0), .D15(0), 
+                .D8(asr_of), .D9(0), .D10(0), .D11(0), .D12(0), .D13(0), .D14(0), .D15(0), 
                 .S(alu), .Y(of));
     zero my_zero(.a(s), .z(zero));
     

@@ -105,15 +105,19 @@ module alu16_tb2(
         alu =4; //decrement
         a=5;
         #10
+        //overflow
+        a=16'b1000000000000000;
+        #10
         alu=5; //increment
+        #10
+        //overflow
+        a=16'b0111111111111111;
         #10
         alu=6; //invert
         a=1;
         #10
-        a = 16'b1000000000000000;
-        #10
         //overflow
-        a=16'b0000000000000000;
+        a = 16'b1000000000000000;
         #10
         alu=7; //asl
         a=4'b1111;
@@ -127,9 +131,12 @@ module alu16_tb2(
         a=4'b1111;
         b=2;
         #10
-        alu=8;
         a=16'b0000000000011111;
         b=3;
+        #10
+        //overflow (should not happen)
+        a=16'b1011001100000000;
+        b=1;
         #10
         alu=9; //lsl
         #10
