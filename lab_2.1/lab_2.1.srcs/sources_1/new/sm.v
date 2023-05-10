@@ -31,10 +31,10 @@ parameter SIZE = 3;
         reg [3:0] timer; //4 bit max is 12 seconds
         reg swap,main,side;
         initial begin
-            timer = 0;
+            timer = 1;
             current = MG;
             next = MG;
-            swap = 1;
+            swap = 0;
             main=0;
             side=0;
         end
@@ -43,8 +43,8 @@ parameter SIZE = 3;
             if(rst)begin
                 current = MG;
                 next=MG;
-                timer = 0;
-                swap = 1;
+                timer = 1;
+                swap = 0;
                 main=0;
                 side=0;
             end
@@ -57,7 +57,7 @@ parameter SIZE = 3;
                 MG : begin
                     if(swap)begin
                         swap=0;
-                        timer = 0;
+                        timer = 1;
                     end
                     else if(timer >= 6) begin
                         swap =1;
@@ -72,21 +72,25 @@ parameter SIZE = 3;
                 SG : begin
                     if(swap) begin
                         swap=0;
-                        timer=0;
+                        timer=1;
                     end
-                    else if(timer >= 3)begin
+                    else if(timer >= 6)begin
                         swap=1;
                         main=1;
                         side=0;
-                        next=YLW;
+                        if(sensor)
+                            next=SENS;
+                        else
+                            next=YLW;
                     end            
                 end
                 YLW : begin
                     if(swap) begin
                         swap=0;
-                        timer=0;
+                        timer=1;
                     end
                     else if(timer >= 2)begin
+                        swap=1;
                         if(main)
                             next=MG;
                         else if(side)
@@ -99,7 +103,7 @@ parameter SIZE = 3;
                 PED : begin
                     if(swap) begin
                         swap=0;
-                        timer=0;
+                        timer=1;
                     end
                     else if(timer >= 3)begin
                         swap =1;
@@ -109,7 +113,7 @@ parameter SIZE = 3;
                 EXT : begin
                    if(swap) begin
                         swap=0;
-                        timer=0;
+                        timer=1;
                     end
                     else if(timer >= 6)begin
                         swap =1;
@@ -119,7 +123,7 @@ parameter SIZE = 3;
                 SENS : begin
                     if(swap) begin
                         swap=0;
-                        timer=0;
+                        timer=1;
                     end
                     else if(timer >= 3)begin
                         swap =1;
@@ -153,7 +157,7 @@ parameter SIZE = 3;
                     if(main)begin
                         mg = 0;
                         my = 0;
-                        mr = 0;
+                        mr = 1;
                         sg = 0;
                         sy = 1;
                         sr = 0;
@@ -165,7 +169,7 @@ parameter SIZE = 3;
                         mr = 0;
                         sg = 0;
                         sy = 0;
-                        sr = 0;
+                        sr = 1;
                         walk = 0;
                     end
                     
