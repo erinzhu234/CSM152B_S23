@@ -22,14 +22,18 @@
 
 module sm(
     input clk, sensor, ped, rst,
-    output reg mg,my,mr, sg,sy,sr,walk
+    output reg mg,my,mr, sg,sy,sr,walk,
+    output reg [3:0]timer
     );
 parameter SIZE = 3;
         parameter MG = 3'b000, SG = 3'b001, YLW = 3'b010, PED = 3'b011, EXT = 3'b100, SENS = 3'b101;
         reg [SIZE-1:0] current;
         reg [SIZE-1:0] next;
-        reg [3:0] timer; //4 bit max is 12 seconds
         reg swap,main,side;
+        wire new_clock;
+        reg walk_on;
+        one_clk one_clk(.master_clk(clk), .one_clk(new_clock));
+
         initial begin
             timer = 1;
             current = MG;
@@ -37,22 +41,37 @@ parameter SIZE = 3;
             swap = 0;
             main=0;
             side=0;
+            walk_on=0;
         end
         
-        always @(posedge clk) begin
+//        always @(posedge new_clock) begin
+//            if(rst)begin
+//                current = MG;
+//                next=MG;
+//                timer = 0;
+//                swap = 0;
+//                main=0;
+//                side=0;
+//            end
+//            else
+//                current = next;
+//        end
+        
+        always @(posedge new_clock) begin
             if(rst)begin
-                current = MG;
-                next=MG;
-                timer = 1;
-                swap = 0;
-                main=0;
-                side=0;
-            end
-            else
-                current = next;
-        end
-        
-        always @(posedge clk) begin
+                        current = MG;
+                        next=MG;
+                        timer = 0;
+                        swap = 0;
+                        main=0;
+                        side=0;
+                        walk_on=0;
+                    end
+                    else
+                        current = next;
+            
+            if(ped)
+                walk_on=1;
             case(current)
                 MG : begin
                     if(swap)begin
@@ -94,13 +113,14 @@ parameter SIZE = 3;
                         if(main)
                             next=MG;
                         else if(side)
-                            if(ped)
+                            if(walk_on)
                                 next=PED;
                             else
                                 next=SG;
                     end           
                 end
                 PED : begin
+                    walk_on=0;
                     if(swap) begin
                         swap=0;
                         timer=1;
@@ -131,65 +151,119 @@ parameter SIZE = 3;
                     end
                 end
              endcase
+             
+             case(current)
+                             MG:begin
+                                 mg = 1;
+                                 my = 0;
+                                 mr = 0;
+                                 sg = 0;
+                                 sy = 0;
+                                 sr = 1;
+                                 walk = 0;
+                             end
+                             SG:begin
+                                 mg = 0;
+                                 my = 0;
+                                 mr = 1;
+                                 sg = 1;
+                                 sy = 0;
+                                 sr = 0;
+                                 walk = 0;
+                             end
+                             YLW:begin
+                                 if(main)begin
+                                     mg = 0;
+                                     my = 0;
+                                     mr = 1;
+                                     sg = 0;
+                                     sy = 1;
+                                     sr = 0;
+                                     walk = 0;
+                                 end
+                                 else if(side)begin
+                                     mg = 0;
+                                     my = 1;
+                                     mr = 0;
+                                     sg = 0;
+                                     sy = 0;
+                                     sr = 1;
+                                     walk = 0;
+                                 end
+                                 
+                             end
+                             PED:begin
+                                 mg = 0;
+                                 my = 0;
+                                 mr = 1;
+                                 sg = 0;
+                                 sy = 0;
+                                 sr = 1;
+                                 walk = 1;
+                             end
+                             default: begin            
+                             end
+                         endcase
+                         timer = timer + 1'b1;
         end
         
-        always @(posedge clk) begin
-            case(current)
-                MG:begin
-                    mg = 1;
-                    my = 0;
-                    mr = 0;
-                    sg = 0;
-                    sy = 0;
-                    sr = 1;
-                    walk = 0;
-                end
-                SG:begin
-                    mg = 0;
-                    my = 0;
-                    mr = 1;
-                    sg = 1;
-                    sy = 0;
-                    sr = 0;
-                    walk = 0;
-                end
-                YLW:begin
-                    if(main)begin
-                        mg = 0;
-                        my = 0;
-                        mr = 1;
-                        sg = 0;
-                        sy = 1;
-                        sr = 0;
-                        walk = 0;
-                    end
-                    else if(side)begin
-                        mg = 0;
-                        my = 1;
-                        mr = 0;
-                        sg = 0;
-                        sy = 0;
-                        sr = 1;
-                        walk = 0;
-                    end
+//        always @(posedge new_clock) begin
+//            case(current)
+//                MG:begin
+//                    mg = 1;
+//                    my = 0;
+//                    mr = 0;
+//                    sg = 0;
+//                    sy = 0;
+//                    sr = 1;
+//                    walk = 0;
+//                end
+//                SG:begin
+//                    mg = 0;
+//                    my = 0;
+//                    mr = 1;
+//                    sg = 1;
+//                    sy = 0;
+//                    sr = 0;
+//                    walk = 0;
+//                end
+//                YLW:begin
+//                    if(main)begin
+//                        mg = 0;
+//                        my = 0;
+//                        mr = 1;
+//                        sg = 0;
+//                        sy = 1;
+//                        sr = 0;
+//                        walk = 0;
+//                    end
+//                    else if(side)begin
+//                        mg = 0;
+//                        my = 1;
+//                        mr = 0;
+//                        sg = 0;
+//                        sy = 0;
+//                        sr = 1;
+//                        walk = 0;
+//                    end
                     
-                end
-                PED:begin
-                    mg = 0;
-                    my = 0;
-                    mr = 1;
-                    sg = 0;
-                    sy = 0;
-                    sr = 1;
-                    walk = 1;
-                end
-                default: begin            
-                end
-            endcase
-        end
+//                end
+//                PED:begin
+//                    mg = 0;
+//                    my = 0;
+//                    mr = 1;
+//                    sg = 0;
+//                    sy = 0;
+//                    sr = 1;
+//                    walk = 1;
+//                end
+//                default: begin            
+//                end
+//            endcase
+//        end
         
         
-        always @(posedge clk) begin
-            timer = timer + 1'b1;
-        end
+//        always @(posedge new_clock) begin
+//            timer = timer + 1'b1;
+//        end
     endmodule
