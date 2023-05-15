@@ -34,45 +34,46 @@ module sm_tb(
     wire sy;
     wire sr;
     wire walk;
-    sm uut(clk, sensor, ped, rst, mg,my,mr, sg,sy,sr,walk);
+    wire [3:0]timer;
+    sm uut(clk, sensor, ped, rst, mg,my,mr, sg,sy,sr,walk,timer);
     initial begin
         clk=1;
         sensor=0;
         ped=0;
-        #44 //12 + 2 + 6 + 2 seconds main green light --> side green light
+        #4400000 //12 + 2 + 6 + 2 seconds main green light --> side green light
         sensor=1;
-        #22 //9 + 2 + 6 + 2 seconds only sensor on for main g
+        #2200000 //9 + 2 + 6 + 2 seconds only sensor on for main g
         sensor=0;
-        #16 //wait for side g
+        #1600000 //wait for side g
         ped=1; 
-        #50 //12 + 2 + 3 + 6 + 2 seconds walk
+        #5000000 //12 + 2 + 3 + 6 + 2 seconds walk
         ped=0;
         //12 + 2 + 9 + 2 sensor on for only side g
-        #28
+        #2000000
         sensor=1;
-        #22
+        #2200000
         ped=1;
-        #28 // 9 + 2 + 3 + 6 + 2 sensor only for main walk is on
+        #2000000 // 9 + 2 + 3 + 6 + 2 sensor only for main walk is on
         sensor=0;
         ped=0;
-        #16
+        #1000000
         sensor=1;// 9 + 2 + 9 + 2 sensor on for both
-        #44
+        #4400000
         sensor=0;
         ped=1;
-        #34// 12 + 2 + 3 + 9 + 2 walk on sensor only for side
+        #3400000// 12 + 2 + 3 + 9 + 2 walk on sensor only for side
         sensor=1;
         ped=0;
-        #22
+        #2200000
         ped=1;
         sensor=1;
-        #50 //9 + 2 + 3 + 9 + 2 sensor for both, walk is on
-        //12 + 2 +3 turn reset on while side g is on and also see walk only registers when yellow
+        #5000000 //9 + 2 + 3 + 9 + 2 sensor for both, walk is on
+        //12 + 2 +3 turn reset on while side g is on
         sensor=0;
         ped=1;
-        #12
+        #1200000
         ped=0;
-        #22
+        #2200000
         rst=1;
 
         #10

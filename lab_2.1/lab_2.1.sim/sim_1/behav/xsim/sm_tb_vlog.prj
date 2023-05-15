@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../lab_2.1.srcs/sources_1/new/one_clk.v" \
 "../../../../lab_2.1.srcs/sources_1/new/sm.v" \
 "../../../../lab_2.1.srcs/sim_1/new/sm_tb.v" \
 
