@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sim_1/new/alu_tb.v,1684180423,verilog,,,,alu_tb,,,,,,,,
+C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/addbit.v,1684179148,verilog,,C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/alu.v,,addbit,,,,,,,,
+C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/alu.v,1684180157,verilog,,C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/andbit.v,,alu,,,,,,,,
+C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/andbit.v,1684179860,verilog,,C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/mux.v,,andbit,,,,,,,,
+C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/mux.v,1684179180,verilog,,C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sim_1/new/alu_tb.v,,mux,,,,,,,,

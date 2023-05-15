@@ -1,0 +1,19 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 34febc1438c64b80b296b94fd9eabfbe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port cin [C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/alu.v:36]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port D1 [C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/alu.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/naich/CS152B/CSM152B_S23/alu_1/alu_1.srcs/sources_1/new/addbit.v" Line 1. Module addbit doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.addbit
+Compiling module xil_defaultlib.andbit
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot alu_tb_behav
