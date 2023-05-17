@@ -1,0 +1,30 @@
+13:54:39 **** Auto Build of configuration Debug for project lab_3_hw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../lab_3_hw_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:66:16: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+     xil_printf(c);
+                ^
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:229:9: note: expected 'const char *' but argument is of type 'int'
+ void    _EXFUN(xil_printf, (const char*, ...));
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: lab_3_hw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab_3_hw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab_3_hw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab_3_hw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab_3_hw.elf  |tee "lab_3_hw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 124024	   1440	   3184	 128648	  1f688	lab_3_hw.elf
+'Finished building: lab_3_hw.elf.size'
+' '
+
+13:54:40 Build Finished (took 925ms)
+
