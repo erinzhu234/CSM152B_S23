@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1684182965">
-  <File Type="OPT-HWDEF" Name="sm.hwdef"/>
   <File Type="ROUTE-BUS-SKEW" Name="sm_bus_skew_routed.rpt"/>
   <File Type="PA-DCP" Name="sm.dcp"/>
-  <File Type="BITSTR-BMM" Name="sm_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="sm_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="sm_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="sm.hwdef"/>
   <File Type="ROUTE-PWR" Name="sm_power_routed.rpt"/>
   <File Type="PA-TCL" Name="sm.tcl"/>
-  <File Type="OPT-TIMING" Name="sm_timing_summary_opted.rpt"/>
+  <File Type="BITSTR-BMM" Name="sm_bd.bmm"/>
   <File Type="OPT-DCP" Name="sm_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="sm_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="sm_reports.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="sm_power_summary_routed.pb"/>
   <File Type="OPT-DRC" Name="sm_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="sm_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="sm_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="sm_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="sm_placed.dcp"/>
   <File Type="PLACE-IO" Name="sm_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="sm_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="sm_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="sm_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="sm_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="sm_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="sm_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="sm_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="sm_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="sm.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="sm_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="sm_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="sm_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="sm.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="sm_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="sm_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="sm_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="sm_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="sm_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="sm_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="sm.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="sm_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="sm.mmi"/>
+  <File Type="BITSTR-LTX" Name="sm.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="sm_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="sm.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sm_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="sm.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sm_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="sm.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="sm_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="sm_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="sm_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="sm_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="sm_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="sm_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="sm_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="sm_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="sm_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="sm_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="sm_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sm_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sm_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sm_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sm_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sm_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sm_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="sm.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="sm_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="sm.rbt"/>
   <File Type="BITSTR-NKY" Name="sm.nky"/>
   <File Type="BG-BGN" Name="sm.bgn"/>
@@ -108,9 +89,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

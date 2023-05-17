@@ -44,18 +44,6 @@ parameter SIZE = 3;
             walk_on=0;
         end
         
-//        always @(posedge new_clock) begin
-//            if(rst)begin
-//                current = MG;
-//                next=MG;
-//                timer = 0;
-//                swap = 0;
-//                main=0;
-//                side=0;
-//            end
-//            else
-//                current = next;
-//        end
         
         always @(posedge new_clock) begin
             if(rst)begin
@@ -206,64 +194,4 @@ parameter SIZE = 3;
                          endcase
                          timer = timer + 1'b1;
         end
-        
-//        always @(posedge new_clock) begin
-//            case(current)
-//                MG:begin
-//                    mg = 1;
-//                    my = 0;
-//                    mr = 0;
-//                    sg = 0;
-//                    sy = 0;
-//                    sr = 1;
-//                    walk = 0;
-//                end
-//                SG:begin
-//                    mg = 0;
-//                    my = 0;
-//                    mr = 1;
-//                    sg = 1;
-//                    sy = 0;
-//                    sr = 0;
-//                    walk = 0;
-//                end
-//                YLW:begin
-//                    if(main)begin
-//                        mg = 0;
-//                        my = 0;
-//                        mr = 1;
-//                        sg = 0;
-//                        sy = 1;
-//                        sr = 0;
-//                        walk = 0;
-//                    end
-//                    else if(side)begin
-//                        mg = 0;
-//                        my = 1;
-//                        mr = 0;
-//                        sg = 0;
-//                        sy = 0;
-//                        sr = 1;
-//                        walk = 0;
-//                    end
-                    
-//                end
-//                PED:begin
-//                    mg = 0;
-//                    my = 0;
-//                    mr = 1;
-//                    sg = 0;
-//                    sy = 0;
-//                    sr = 1;
-//                    walk = 1;
-//                end
-//                default: begin            
-//                end
-//            endcase
-//        end
-        
-        
-//        always @(posedge new_clock) begin
-//            timer = timer + 1'b1;
-//        end
     endmodule
