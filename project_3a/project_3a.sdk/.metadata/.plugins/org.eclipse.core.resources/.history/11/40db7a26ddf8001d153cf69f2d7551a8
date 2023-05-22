@@ -53,12 +53,30 @@
 int main()
 {
     init_platform();
-
+    xil_printf("number: \n\r");
     int a;
-
-    scanf("%d", &a);
-
-    xil_printf(a);
+    int conva;
+    int BUFF = 10;
+    char buf[BUFF];
+    int i = 0;
+    while((a = getchar()) != '\n'){
+    	if(a >= '0' && a <= '9'){
+    		conva = a - '0';
+    		xil_printf("%d", conva);
+//    		buf[i] = conva;
+//    		i++;
+    	}
+    }
+    //xil_printf(conva);
+//    char buf[10];
+//    int i,j=0;
+//    while(j<10){
+//    	i=getchar();
+//    	buf[j] = i;
+//    	j++;
+//    }
+//    xil_printf("%s",buf);
+//    buf = NULL;
 
     cleanup_platform();
     return 0;
