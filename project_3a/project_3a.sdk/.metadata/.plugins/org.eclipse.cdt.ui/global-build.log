@@ -2246,3 +2246,561 @@ make: Nothing to be done for `all'.
 14:15:50 **** Incremental Build of configuration Debug for project part2 ****
 make all 
 make: Nothing to be done for `all'.
+14:37:13 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:28:14: error: invalid use of void expression
+    char c2 = (char)DemoRun();
+              ^
+../src/helloworld.c:29:8: warning: unused variable 'keypad' [-Wunused-variable]
+    int keypad = c2 - '0';
+        ^~~~~~
+../src/helloworld.c:26:8: warning: unused variable 'keyboard' [-Wunused-variable]
+    int keyboard = c1 - '0';
+        ^~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:50:4: error: conflicting types for 'DemoRun'
+ u8 DemoRun() {
+    ^~~~~~~
+../src/helloworld.c:12:6: note: previous declaration of 'DemoRun' was here
+ void DemoRun();
+      ^~~~~~~
+make: *** [src/helloworld.o] Error 1
+14:37:27 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:29:8: warning: unused variable 'keypad' [-Wunused-variable]
+    int keypad = c2 - '0';
+        ^~~~~~
+../src/helloworld.c:26:8: warning: unused variable 'keyboard' [-Wunused-variable]
+    int keyboard = c1 - '0';
+        ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25104	   1312	   3192	  29608	   73a8	part2.elf
+'Finished building: part2.elf.size'
+' '
+15:02:58 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'to_input':
+../src/helloworld.c:49:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return rock;
+          ^~~~
+../src/helloworld.c:51:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return paper;
+          ^~~~~
+../src/helloworld.c:53:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return scissors;
+          ^~~~~~~~
+../src/helloworld.c:55:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return invalid;
+          ^~~~~~~
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:74:7: error: array size missing in 'result'
+  char result[];
+       ^~~~~~
+../src/helloworld.c:83:10: error: assignment to expression with array type
+   result += pc;
+          ^~
+../src/helloworld.c:84:6: error: assignment to expression with array type
+   op += ">";
+      ^~
+../src/helloworld.c:87:10: error: assignment to expression with array type
+   result += fpga;
+          ^~
+../src/helloworld.c:88:6: error: assignment to expression with array type
+   op += "<";
+      ^~
+../src/helloworld.c:91:10: error: assignment to expression with array type
+   result += draw;
+          ^~
+../src/helloworld.c:92:6: error: assignment to expression with array type
+   op += "=";
+      ^~
+../src/helloworld.c:95:20: error: invalid initializer
+  char pc_input[] = to_input(keyboard);
+                    ^~~~~~~~
+../src/helloworld.c:96:22: error: invalid initializer
+  char fpga_input[] = to_input(keypad);
+                      ^~~~~~~~
+../src/helloworld.c:98:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+../src/helloworld.c:98:26: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~      ^
+../src/helloworld.c:98:9: error: assignment to expression with array type
+  result += pc_input + op + fpga_input;
+         ^~
+../src/helloworld.c:98:2: warning: statement with no effect [-Wunused-value]
+  result += pc_input + op + fpga_input;
+  ^~~~~~
+../src/helloworld.c:100:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return result;
+         ^~~~~~
+make: *** [src/helloworld.o] Error 1
+15:03:15 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'to_input':
+../src/helloworld.c:49:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return rock;
+          ^~~~
+../src/helloworld.c:51:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return paper;
+          ^~~~~
+../src/helloworld.c:53:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return scissors;
+          ^~~~~~~~
+../src/helloworld.c:55:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return invalid;
+          ^~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:73:5: error: expected identifier or '(' before '[' token
+ char[] generate_result(int keyboard, int keypad){
+     ^
+make: *** [src/helloworld.o] Error 1
+15:03:58 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'to_input':
+../src/helloworld.c:49:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return rock;
+          ^~~~
+../src/helloworld.c:51:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return paper;
+          ^~~~~
+../src/helloworld.c:53:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return scissors;
+          ^~~~~~~~
+../src/helloworld.c:55:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return invalid;
+          ^~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:73:13: error: conflicting types for 'generate_result'
+ const char* generate_result(int keyboard, int keypad){
+             ^~~~~~~~~~~~~~~
+../src/helloworld.c:20:7: note: previous declaration of 'generate_result' was here
+ char* generate_result(int keyboard, int keypad);
+       ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:74:7: error: array size missing in 'result'
+  char result[];
+       ^~~~~~
+../src/helloworld.c:83:10: error: assignment to expression with array type
+   result += pc;
+          ^~
+../src/helloworld.c:84:6: error: assignment to expression with array type
+   op += ">";
+      ^~
+../src/helloworld.c:87:10: error: assignment to expression with array type
+   result += fpga;
+          ^~
+../src/helloworld.c:88:6: error: assignment to expression with array type
+   op += "<";
+      ^~
+../src/helloworld.c:91:10: error: assignment to expression with array type
+   result += draw;
+          ^~
+../src/helloworld.c:92:6: error: assignment to expression with array type
+   op += "=";
+      ^~
+../src/helloworld.c:95:20: error: invalid initializer
+  char pc_input[] = to_input(keyboard);
+                    ^~~~~~~~
+../src/helloworld.c:96:22: error: invalid initializer
+  char fpga_input[] = to_input(keypad);
+                      ^~~~~~~~
+../src/helloworld.c:98:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+../src/helloworld.c:98:26: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~      ^
+../src/helloworld.c:98:9: error: assignment to expression with array type
+  result += pc_input + op + fpga_input;
+         ^~
+../src/helloworld.c:98:2: warning: statement with no effect [-Wunused-value]
+  result += pc_input + op + fpga_input;
+  ^~~~~~
+../src/helloworld.c:100:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  return result;
+         ^~~~~~
+make: *** [src/helloworld.o] Error 1
+15:05:53 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'to_input':
+../src/helloworld.c:49:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return rock;
+          ^~~~
+../src/helloworld.c:51:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return paper;
+          ^~~~~
+../src/helloworld.c:53:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return scissors;
+          ^~~~~~~~
+../src/helloworld.c:55:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return invalid;
+          ^~~~~~~
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:83:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += pc;
+          ^~ ~~
+../src/helloworld.c:84:6: error: assignment to expression with array type
+   op += ">";
+      ^~
+../src/helloworld.c:87:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += fpga;
+          ^~ ~~~~
+../src/helloworld.c:88:6: error: assignment to expression with array type
+   op += "<";
+      ^~
+../src/helloworld.c:91:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += draw;
+          ^~ ~~~~
+../src/helloworld.c:92:6: error: assignment to expression with array type
+   op += "=";
+      ^~
+../src/helloworld.c:95:20: error: invalid initializer
+  char pc_input[] = to_input(keyboard);
+                    ^~~~~~~~
+../src/helloworld.c:96:22: error: invalid initializer
+  char fpga_input[] = to_input(keypad);
+                      ^~~~~~~~
+../src/helloworld.c:98:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+../src/helloworld.c:98:26: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~      ^
+../src/helloworld.c:98:9: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+         ^~ ~~~~~~~~
+../src/helloworld.c:98:2: warning: statement with no effect [-Wunused-value]
+  result += pc_input + op + fpga_input;
+  ^~~~~~
+make: *** [src/helloworld.o] Error 1
+15:07:24 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'to_input':
+../src/helloworld.c:49:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return rock;
+          ^~~~
+../src/helloworld.c:51:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return paper;
+          ^~~~~
+../src/helloworld.c:53:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return scissors;
+          ^~~~~~~~
+../src/helloworld.c:55:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return invalid;
+          ^~~~~~~
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:74:13: error: expected identifier or '(' before '[' token
+  static char[] result;
+             ^
+../src/helloworld.c:83:3: error: 'result' undeclared (first use in this function)
+   result += pc;
+   ^~~~~~
+../src/helloworld.c:83:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:84:6: error: assignment to expression with array type
+   op += ">";
+      ^~
+../src/helloworld.c:88:6: error: assignment to expression with array type
+   op += "<";
+      ^~
+../src/helloworld.c:92:6: error: assignment to expression with array type
+   op += "=";
+      ^~
+../src/helloworld.c:95:20: error: invalid initializer
+  char pc_input[] = to_input(keyboard);
+                    ^~~~~~~~
+../src/helloworld.c:96:22: error: invalid initializer
+  char fpga_input[] = to_input(keypad);
+                      ^~~~~~~~
+../src/helloworld.c:98:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+../src/helloworld.c:98:26: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~      ^
+../src/helloworld.c:98:2: warning: statement with no effect [-Wunused-value]
+  result += pc_input + op + fpga_input;
+  ^~~~~~
+make: *** [src/helloworld.o] Error 1
+15:07:57 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'to_input':
+../src/helloworld.c:49:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return rock;
+          ^~~~
+../src/helloworld.c:51:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return paper;
+          ^~~~~
+../src/helloworld.c:53:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return scissors;
+          ^~~~~~~~
+../src/helloworld.c:55:10: warning: function returns address of local variable [-Wreturn-local-addr]
+   return invalid;
+          ^~~~~~~
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:74:6: error: expected identifier or '(' before '[' token
+  char[] result;
+      ^
+../src/helloworld.c:83:3: error: 'result' undeclared (first use in this function)
+   result += pc;
+   ^~~~~~
+../src/helloworld.c:83:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:84:6: error: assignment to expression with array type
+   op += ">";
+      ^~
+../src/helloworld.c:88:6: error: assignment to expression with array type
+   op += "<";
+      ^~
+../src/helloworld.c:92:6: error: assignment to expression with array type
+   op += "=";
+      ^~
+../src/helloworld.c:95:20: error: invalid initializer
+  char pc_input[] = to_input(keyboard);
+                    ^~~~~~~~
+../src/helloworld.c:96:22: error: invalid initializer
+  char fpga_input[] = to_input(keypad);
+                      ^~~~~~~~
+../src/helloworld.c:98:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+../src/helloworld.c:98:26: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~      ^
+../src/helloworld.c:98:2: warning: statement with no effect [-Wunused-value]
+  result += pc_input + op + fpga_input;
+  ^~~~~~
+make: *** [src/helloworld.o] Error 1
+15:10:14 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:69:6: error: expected identifier or '(' before '[' token
+  char[] result;
+      ^
+../src/helloworld.c:78:3: error: 'result' undeclared (first use in this function)
+   result += pc;
+   ^~~~~~
+../src/helloworld.c:78:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:79:6: error: assignment to expression with array type
+   op += ">";
+      ^~
+../src/helloworld.c:83:6: error: assignment to expression with array type
+   op += "<";
+      ^~
+../src/helloworld.c:87:6: error: assignment to expression with array type
+   op += "=";
+      ^~
+../src/helloworld.c:90:20: error: too few arguments to function 'to_input'
+  char pc_input[] = to_input(keyboard);
+                    ^~~~~~~~
+../src/helloworld.c:42:6: note: declared here
+ void to_input(int x, char* input){
+      ^~~~~~~~
+../src/helloworld.c:91:22: error: too few arguments to function 'to_input'
+  char fpga_input[] = to_input(keypad);
+                      ^~~~~~~~
+../src/helloworld.c:42:6: note: declared here
+ void to_input(int x, char* input){
+      ^~~~~~~~
+../src/helloworld.c:91:22: error: invalid initializer
+  char fpga_input[] = to_input(keypad);
+                      ^~~~~~~~
+../src/helloworld.c:93:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+../src/helloworld.c:93:26: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~      ^
+../src/helloworld.c:93:2: warning: statement with no effect [-Wunused-value]
+  result += pc_input + op + fpga_input;
+  ^~~~~~
+make: *** [src/helloworld.o] Error 1
+15:11:14 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:69:6: error: expected identifier or '(' before '[' token
+  char[] result;
+      ^
+../src/helloworld.c:78:3: error: 'result' undeclared (first use in this function)
+   result += pc;
+   ^~~~~~
+../src/helloworld.c:78:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:79:6: error: assignment to expression with array type
+   op += ">";
+      ^~
+../src/helloworld.c:83:6: error: assignment to expression with array type
+   op += "<";
+      ^~
+../src/helloworld.c:87:6: error: assignment to expression with array type
+   op += "=";
+      ^~
+../src/helloworld.c:95:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+../src/helloworld.c:98:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+15:12:05 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:68:13: error: conflicting types for 'generate_result'
+ const char* generate_result(int keyboard, int keypad, char* result){
+             ^~~~~~~~~~~~~~~
+../src/helloworld.c:20:13: note: previous declaration of 'generate_result' was here
+ const char* generate_result(int keyboard, int keypad);
+             ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:77:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += pc;
+          ^~ ~~
+../src/helloworld.c:78:6: error: assignment to expression with array type
+   op = ">";
+      ^
+../src/helloworld.c:81:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += fpga;
+          ^~ ~~~~
+../src/helloworld.c:82:6: error: assignment to expression with array type
+   op = "<";
+      ^
+../src/helloworld.c:85:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += draw;
+          ^~ ~~~~
+../src/helloworld.c:86:6: error: assignment to expression with array type
+   op = "=";
+      ^
+../src/helloworld.c:94:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+make: *** [src/helloworld.o] Error 1
+15:12:19 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:77:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += pc;
+          ^~ ~~
+../src/helloworld.c:78:6: error: assignment to expression with array type
+   op = ">";
+      ^
+../src/helloworld.c:81:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += fpga;
+          ^~ ~~~~
+../src/helloworld.c:82:6: error: assignment to expression with array type
+   op = "<";
+      ^
+../src/helloworld.c:85:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += draw;
+          ^~ ~~~~
+../src/helloworld.c:86:6: error: assignment to expression with array type
+   op = "=";
+      ^
+../src/helloworld.c:94:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+make: *** [src/helloworld.o] Error 1
+15:14:50 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:82:6: error: assignment to expression with array type
+   op = "<";
+      ^
+../src/helloworld.c:85:10: error: invalid operands to binary + (have 'char *' and 'char *')
+   result += draw;
+          ^~ ~~~~
+../src/helloworld.c:86:6: error: assignment to expression with array type
+   op = "=";
+      ^
+../src/helloworld.c:94:21: error: invalid operands to binary + (have 'char *' and 'char *')
+  result += pc_input + op + fpga_input;
+            ~~~~~~~~ ^
+make: *** [src/helloworld.o] Error 1
+15:16:49 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:95:2: warning: implicit declaration of function 'strcar'; did you mean 'strchr'? [-Wimplicit-function-declaration]
+  strcar(result, op);
+  ^~~~~~
+  strchr
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25260	   1312	   3196	  29768	   7448	part2.elf
+'Finished building: part2.elf.size'
+' '
+15:16:59 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25260	   1312	   3196	  29768	   7448	part2.elf
+'Finished building: part2.elf.size'
+' '

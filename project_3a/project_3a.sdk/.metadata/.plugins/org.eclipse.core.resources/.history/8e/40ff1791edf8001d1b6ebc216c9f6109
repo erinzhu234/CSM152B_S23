@@ -17,7 +17,7 @@ void DemoSleep(u32 millis);
 
 void to_input(int x, char* input);
 int game(int x, int y);
-void generate_result(int keyboard, int keypad, char* result);
+const char* generate_result(int keyboard, int keypad);
 
 PmodKYPD myDevice;
 
@@ -65,36 +65,34 @@ int game(int x, int y){
 	}
 }
 
-void generate_result(int keyboard, int keypad, char* result){
+const char* generate_result(int keyboard, int keypad){
+	char[] result;
 	char pc[] = "PC won! ";
 	char fpga[] = "FPGA won! ";
 	char draw[] = "Draw! ";
-	char op[2] = "";
+	char op[] = "";
 
 	int winner = game(keyboard, keypad);
 
 	if(winner == 0){
-		strcat(result, pc);
-		strcpy(op, ">");
+		result += pc;
+		op += ">";
 	}
 	else if(winner == 1){
-		strcat(result, fpga);
-		strcpy(op, "<");
+		result += fpga;
+		op += "<";
 	}
 	else if(winner == 2){
-		strcat(result, draw);
-		strcpy(op, "=");
+		result += draw;
+		op += "=";
 	}
 
-	char pc_input[10];
-	char fpga_input[10];
-	to_input(keyboard, pc_input);
-	to_input(keypad, fpga_input);
+	char pc_input[] = to_input(keyboard);
+	char fpga_input[] = to_input(keypad);
 
-	strcat(result, pc_input);
-	strcat(result, op);
-	strcat(result, fpga_input);
+	result += pc_input + op + fpga_input;
 
+	return result;
 }
 
 // keytable is determined as follows (indices shown in Keypad position below)

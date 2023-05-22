@@ -92,7 +92,7 @@ void generate_result(int keyboard, int keypad, char* result){
 	to_input(keypad, fpga_input);
 
 	strcat(result, pc_input);
-	strcat(result, op);
+	strcar(result, op);
 	strcat(result, fpga_input);
 
 }

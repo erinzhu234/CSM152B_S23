@@ -9,15 +9,11 @@
 #include "xparameters.h"
 
 void DemoInitialize();
-u8 DemoRun();
+void DemoRun();
 void DemoCleanup();
 void DisableCaches();
 void EnableCaches();
 void DemoSleep(u32 millis);
-
-void to_input(int x, char* input);
-int game(int x, int y);
-void generate_result(int keyboard, int keypad, char* result);
 
 PmodKYPD myDevice;
 
@@ -32,69 +28,10 @@ int main(void) {
    char c2 = (char)DemoRun();
    int keypad = c2 - '0';
 
-   xil_printf("keyboard input: %d", keyboard);
-   xil_printf("keypad input: %d", keypad);
+
 
    DemoCleanup();
    return 0;
-}
-
-void to_input(int x, char* input){
-	if(x == 1)
-		input = "rock";
-	else if(x == 2)
-		input = "paper";
-	else if(x == 3)
-		input = "scissors";
-	else
-		input = "invalid";
-}
-
-/**
- * 0 for x wins, 1 for y wins, 2 for a draw
- */
-int game(int x, int y){
-	if(x == y){
-		return 2;
-	}
-	if((x==1 && y==3)||(x==2 && y==1)||(x==3 && y==2)){
-		return 0;
-	}
-	else{
-		return 1;
-	}
-}
-
-void generate_result(int keyboard, int keypad, char* result){
-	char pc[] = "PC won! ";
-	char fpga[] = "FPGA won! ";
-	char draw[] = "Draw! ";
-	char op[2] = "";
-
-	int winner = game(keyboard, keypad);
-
-	if(winner == 0){
-		strcat(result, pc);
-		strcpy(op, ">");
-	}
-	else if(winner == 1){
-		strcat(result, fpga);
-		strcpy(op, "<");
-	}
-	else if(winner == 2){
-		strcat(result, draw);
-		strcpy(op, "=");
-	}
-
-	char pc_input[10];
-	char fpga_input[10];
-	to_input(keyboard, pc_input);
-	to_input(keypad, fpga_input);
-
-	strcat(result, pc_input);
-	strcat(result, op);
-	strcat(result, fpga_input);
-
 }
 
 // keytable is determined as follows (indices shown in Keypad position below)
