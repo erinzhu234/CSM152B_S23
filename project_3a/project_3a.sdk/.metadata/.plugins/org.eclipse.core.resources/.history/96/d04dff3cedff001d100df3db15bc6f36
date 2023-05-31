@@ -22,39 +22,37 @@ void generate_result(int keyboard, int keypad, char* result);
 PmodKYPD myDevice;
 
 int main(void) {
-	while(1){
-	   DemoInitialize();
+   DemoInitialize();
 
-	   // get keyboard input
-	   char c1;
-	   xil_printf("keyboard input: ");
-	   while(c1 = getchar()){
-		   if(c1>='1' && c1<='3'){
-			   break;
-		   }
+   // get keyboard input
+   char c1;
+   xil_printf("keyboard input: ");
+   while(c1 = getchar()){
+	   if(c1>='0' && c1<='2'){
+		   break;
 	   }
-	   int keyboard = c1 - '0';
-	   xil_printf("%d\n\r", keyboard);
+   }
+   int keyboard = c1 - '0';
+   xil_printf("%d\n\r", keyboard);
 
-	   xil_printf("keypad input: ");
-	   char c2;
-	   while(c2 = (char)DemoRun()){
-		   if(c2>='1' && c2<='3'){
-			   break;
-		   }
-	   }
-	   int keypad = c2 - '0';
-	   xil_printf("%d\n\r", keypad);
+   xil_printf("keypad input: ");
+   char c2;
+   while(c2 = (char)DemoRun()){
+   	   if(c2>='0' && c2<='2'){
+   		   break;
+   	   }
+   }
+   int keypad = c2 - '0';
+   xil_printf("%d\n\r", keypad);
 
-	//   xil_printf("keyboard input: %d", keyboard);
-	//   xil_printf("keypad input: %d", keypad);
+//   xil_printf("keyboard input: %d", keyboard);
+//   xil_printf("keypad input: %d", keypad);
 
-	   char result[100] = "";
-	   generate_result(keyboard, keypad, result);
-	   xil_printf("%s", result);
+   char result[100] = "";
+   generate_result(keyboard, keypad, result);
+   xil_printf("%s", result);
 
-	   DemoCleanup();
-	}
+   DemoCleanup();
    return 0;
 }
 

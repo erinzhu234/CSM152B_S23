@@ -77,51 +77,46 @@ XGpio Gpio;
 
 int main()
 {
-	while(1){
-		init_platform();
-		xil_printf("number: \n\r");
-		int a;
-		int conva;
-		bool first = true;
-		int x = 0;
-		int y = 0;
-		while(a = getchar()){
-			if(a >= '0' && a <= '9'){
-				conva = a - '0';
-				if(first){
-					x = conva + 10*x;
-				}else{
-					y = conva + 10*y;
-				}
-			}
-			else if(a == ' '){
-				first=false;
-			}else {
-				break;
-			}
-		}
+    init_platform();
+    xil_printf("number: \n\r");
+    int a;
+    int conva;
+    bool first = true;
+    int x = 0;
+    int y = 0;
+    while(a = getchar()){
+    	if(a >= '0' && a <= '9'){
+    		conva = a - '0';
+    		if(first){
+    			x = conva + 10*x;
+    		}else{
+    			y = conva + 10*y;
+    		}
+    	}
+    	else if(a == ' '){
+    		first=false;
+    	}else {
+    		break;
+    	}
+    }
 
-		int result = x*y;
+    int result = x*y;
 
-		xil_printf("%d %d\n\r", x, y);
-		xil_printf("result: %d\n\r", result);
+    xil_printf("%d %d\n\r", x, y);
+    xil_printf("result: %d\n\r", result);
 
-		int Status;
+    int Status;
 
-		Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
-		if (Status != XST_SUCCESS) {
-			xil_printf("Gpio Initialization Failed\r\n");
-			return XST_FAILURE;
-		}
-
-		if(result>100){
-			XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, LED);
-		}
-		else{
-			XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, 0);
-		}
-
-		cleanup_platform();
+    Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
 	}
+
+	if(result>100){
+		XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, LED);
+	}
+
+    cleanup_platform();
     return 0;
 }

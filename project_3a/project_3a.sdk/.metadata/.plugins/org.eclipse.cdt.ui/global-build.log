@@ -2804,3 +2804,511 @@ mb-size part2.elf  |tee "part2.elf.size"
   25260	   1312	   3196	  29768	   7448	part2.elf
 'Finished building: part2.elf.size'
 ' '
+12:19:31 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:20:11 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:22:13 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25388	   1312	   3196	  29896	   74c8	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:22:20 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:24:55 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25316	   1312	   3196	  29824	   7480	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:25:10 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:25:49 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:29:34 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25380	   1312	   3196	  29888	   74c0	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:31:27 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25380	   1312	   3196	  29888	   74c0	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:31:33 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:35:11 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+../src/helloworld.c:51:9: error: array size missing in 'result'
+    char result[];
+         ^~~~~~
+make: *** [src/helloworld.o] Error 1
+12:35:35 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26696	   1312	   3192	  31200	   79e0	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:35:38 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:42:13 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26780	   1312	   3196	  31288	   7a38	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:42:17 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:46:45 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:110:12: error: assignment to expression with array type
+   pc_input = "rock";
+            ^
+../src/helloworld.c:112:12: error: assignment to expression with array type
+   pc_input = "paper";
+            ^
+../src/helloworld.c:114:12: error: assignment to expression with array type
+   pc_input = "scissors";
+            ^
+../src/helloworld.c:117:14: error: assignment to expression with array type
+   fpga_input = "rock";
+              ^
+../src/helloworld.c:119:14: error: assignment to expression with array type
+   fpga_input = "paper";
+              ^
+../src/helloworld.c:121:14: error: assignment to expression with array type
+   fpga_input = "scissors";
+              ^
+make: *** [src/helloworld.o] Error 1
+12:47:38 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+../src/helloworld.c: In function 'generate_result':
+../src/helloworld.c:112:12: error: assignment to expression with array type
+   pc_input = "paper";
+            ^
+../src/helloworld.c:114:12: error: assignment to expression with array type
+   pc_input = "scissors";
+            ^
+../src/helloworld.c:117:14: error: assignment to expression with array type
+   fpga_input = "rock";
+              ^
+../src/helloworld.c:119:14: error: assignment to expression with array type
+   fpga_input = "paper";
+              ^
+../src/helloworld.c:121:14: error: assignment to expression with array type
+   fpga_input = "scissors";
+              ^
+make: *** [src/helloworld.o] Error 1
+12:48:43 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27352	   1312	   3192	  31856	   7c70	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:48:47 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:49:24 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:52:51 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27352	   1312	   3192	  31856	   7c70	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:52:56 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:54:05 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27272	   1312	   3192	  31776	   7c20	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:54:08 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:55:02 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27340	   1312	   3196	  31848	   7c68	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:55:14 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27204	   1312	   3196	  31712	   7be0	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:55:17 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:55:35 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:56:31 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:30:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c1 = getchar()){
+          ^~
+../src/helloworld.c:40:10: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    while(c2 = (char)DemoRun()){
+          ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27204	   1312	   3196	  31712	   7be0	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:56:36 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+12:57:37 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:11: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     while(c1 = getchar()){
+           ^~
+../src/helloworld.c:41:11: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     while(c2 = (char)DemoRun()){
+           ^~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27180	   1312	   3196	  31688	   7bc8	part2.elf
+'Finished building: part2.elf.size'
+' '
+12:57:48 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:01:52 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:87:11: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     while(a = getchar()){
+           ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24688	   1332	   3196	  29216	   7220	part2.elf
+'Finished building: part2.elf.size'
+' '
+13:01:55 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:02:24 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:03:01 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   while(a = getchar()){
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24688	   1332	   3196	  29216	   7220	part2.elf
+'Finished building: part2.elf.size'
+' '
+13:03:04 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:04:17 **** Auto Build of configuration Debug for project part2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   while(a = getchar()){
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: part2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../part2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "part2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: part2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size part2.elf  |tee "part2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24720	   1332	   3196	  29248	   7240	part2.elf
+'Finished building: part2.elf.size'
+' '
+13:04:20 **** Incremental Build of configuration Debug for project part2 ****
+make all 
+make: Nothing to be done for `all'.

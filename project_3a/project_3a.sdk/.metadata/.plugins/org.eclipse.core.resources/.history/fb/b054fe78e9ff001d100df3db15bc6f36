@@ -22,39 +22,24 @@ void generate_result(int keyboard, int keypad, char* result);
 PmodKYPD myDevice;
 
 int main(void) {
-	while(1){
-	   DemoInitialize();
+   DemoInitialize();
 
-	   // get keyboard input
-	   char c1;
-	   xil_printf("keyboard input: ");
-	   while(c1 = getchar()){
-		   if(c1>='1' && c1<='3'){
-			   break;
-		   }
-	   }
-	   int keyboard = c1 - '0';
-	   xil_printf("%d\n\r", keyboard);
+   // get keyboard input
+   char c1;
+   xil_printf("keyboard input: ");
+   c1 = getchar();
+   int keyboard = c1 - '0';
+   xil_printf("%d\n\r", keyboard);
 
-	   xil_printf("keypad input: ");
-	   char c2;
-	   while(c2 = (char)DemoRun()){
-		   if(c2>='1' && c2<='3'){
-			   break;
-		   }
-	   }
-	   int keypad = c2 - '0';
-	   xil_printf("%d\n\r", keypad);
+   xil_printf("keypad input: ");
+   char c2 = (char)DemoRun();
+   int keypad = c2 - '0';
+   xil_printf("%d\n\r", keypad);
 
-	//   xil_printf("keyboard input: %d", keyboard);
-	//   xil_printf("keypad input: %d", keypad);
+   xil_printf("keyboard input: %d", keyboard);
+   xil_printf("keypad input: %d", keypad);
 
-	   char result[100] = "";
-	   generate_result(keyboard, keypad, result);
-	   xil_printf("%s", result);
-
-	   DemoCleanup();
-	}
+   DemoCleanup();
    return 0;
 }
 
@@ -107,31 +92,13 @@ void generate_result(int keyboard, int keypad, char* result){
 
 	char pc_input[10];
 	char fpga_input[10];
-
-	if(keyboard == 1)
-		strcat(pc_input, "rock");
-	else if(keyboard == 2)
-		strcat(pc_input, "paper");
-	else if(keyboard == 3)
-		strcat(pc_input, "scissors");
-
-	if(keypad == 1)
-		strcat(fpga_input, "rock");
-	else if(keypad == 2)
-		strcat(fpga_input, "paper");
-	else if(keypad == 3)
-		strcat(fpga_input, "scissors");
-
-//	to_input(keyboard, pc_input);
-//	to_input(keypad, fpga_input);
-//	xil_printf("pc_input is: %s\n\r", pc_input);
-//	xil_printf("fpga_input is: %s\n\r", fpga_input);
+	to_input(keyboard, pc_input);
+	to_input(keypad, fpga_input);
 
 	strcat(result, pc_input);
 	strcat(result, op);
 	strcat(result, fpga_input);
-	strcat(result, "\n\r");
-//	xil_printf("result is: %s\n\r", result);
+
 }
 
 // keytable is determined as follows (indices shown in Keypad position below)
@@ -168,13 +135,13 @@ u8 DemoRun() {
             && (status != last_status || key != last_key)) {
     	 return key;
 //         xil_printf("Key Pressed: %c\r\n", (char) key);
-//         last_key = key;
-      } else if (status == KYPD_MULTI_KEY && status != last_status){}
-//         xil_printf("Error: Multiple keys pressed\r\n");
+         last_key = key;
+      } else if (status == KYPD_MULTI_KEY && status != last_status)
+         xil_printf("Error: Multiple keys pressed\r\n");
 
       last_status = status;
 
-      usleep(100);
+      usleep(1000);
    }
    return 'x';
 }

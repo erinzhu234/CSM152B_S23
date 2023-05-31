@@ -117,9 +117,6 @@ int main()
 		if(result>100){
 			XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, LED);
 		}
-		else{
-			XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, 0);
-		}
 
 		cleanup_platform();
 	}
