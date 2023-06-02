@@ -1,6 +1,14 @@
-13:04:20 **** Incremental Build of configuration Debug for project part2 ****
+13:10:32 **** Incremental Build of configuration Debug for project part2 ****
 make all 
-make: Nothing to be done for `all'.
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../part2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:34:0:
+../src/PmodAMP2.h:26:10: fatal error: PWM.h: No such file or directory
+ #include "PWM.h"
+          ^~~~~~~
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
 
-13:04:20 Build Finished (took 173ms)
+13:10:32 Build Finished (took 313ms)
 

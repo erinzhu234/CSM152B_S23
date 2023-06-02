@@ -2,12 +2,12 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed May 17 13:39:08 2023
-# Process ID: 14432
-# Current directory: C:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1
+# Start of session at: Fri Jun  2 12:37:43 2023
+# Process ID: 25708
+# Current directory: C:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1
 # Command line: vivado.exe -log design_1_dlmb_bram_if_cntlr_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dlmb_bram_if_cntlr_0.tcl
-# Log file: C:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/design_1_dlmb_bram_if_cntlr_0.vds
-# Journal file: C:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1\vivado.jou
+# Log file: C:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/design_1_dlmb_bram_if_cntlr_0.vds
+# Journal file: C:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_dlmb_bram_if_cntlr_0.tcl -notrace
 Command: synth_design -top design_1_dlmb_bram_if_cntlr_0 -part xc7a35tcpg236-1 -mode out_of_context
@@ -15,16 +15,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14024 
+INFO: Helper process launched with PID 13704 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 497.074 ; gain = 98.160
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 499.176 ; gain = 100.156
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_NUM_LMB bound to: 1 - type: integer 
-	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000100000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000001100000000000000000 
 	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
@@ -43,12 +43,12 @@ INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [c:/User
 	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3116' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:225]
-INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3116' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000100000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000001100000000000000000 
 	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
@@ -72,7 +72,7 @@ INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/Student/Do
 	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000100000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000001100000000000000000 
 	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
@@ -80,11 +80,11 @@ INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/Student/Do
 	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
 	Parameter C_ECC bound to: 0 - type: integer 
 	Parameter C_NUM_LMB bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2524' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3463]
-INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2524' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3463]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000100000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000001100000000000000000 
 	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
 	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
@@ -94,16 +94,16 @@ INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/Student/Documents/Gi
 	Parameter C_NUM_LMB bound to: 1 - type: integer 
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000100000000000000000 
-INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2678]
-INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000001100000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2107' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2678]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
 	Parameter C_AW bound to: 32 - type: integer 
 	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000100000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (1#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
-INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (2#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
-INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (3#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
-INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (4#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000001100000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (1#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2122]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (2#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2610]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (3#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ipshared/92fd/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3240]
+INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (4#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[0]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[2]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[3]
@@ -116,7 +116,6 @@ WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[9]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[10]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[11]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[12]
-WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[13]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[15]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[16]
 WARNING: [Synth 8-3331] design pselect_mask has unconnected port A[17]
@@ -204,9 +203,10 @@ WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB1_AddrStrobe
 WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB1_ReadStrobe
 WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB1_WriteStrobe
 WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB1_BE[0]
+WARNING: [Synth 8-3331] design lmb_mux has unconnected port LMB1_BE[1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 553.918 ; gain = 155.004
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 556.176 ; gain = 157.156
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -219,45 +219,45 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 553.918 ; gain = 155.004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 556.176 ; gain = 157.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 553.918 ; gain = 155.004
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 556.176 ; gain = 157.156
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 843.719 ; gain = 1.539
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.465 . Memory (MB): peak = 844.734 ; gain = 1.555
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 843.719 ; gain = 444.805
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 844.734 ; gain = 445.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 843.719 ; gain = 444.805
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 844.734 ; gain = 445.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 843.719 ; gain = 444.805
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 844.734 ; gain = 445.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 843.719 ; gain = 444.805
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 844.734 ; gain = 445.715
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -299,7 +299,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 843.719 ; gain = 444.805
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 844.734 ; gain = 445.715
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -311,13 +311,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 870.168 ; gain = 471.254
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 870.648 ; gain = 471.629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 870.242 ; gain = 471.328
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 870.648 ; gain = 471.629
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -329,7 +329,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 879.922 ; gain = 481.008
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 880.293 ; gain = 481.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -353,7 +353,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 879.922 ; gain = 481.008
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 880.293 ; gain = 481.273
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -366,7 +366,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 879.922 ; gain = 481.008
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 880.293 ; gain = 481.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -378,25 +378,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 879.922 ; gain = 481.008
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 880.293 ; gain = 481.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 879.922 ; gain = 481.008
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 880.293 ; gain = 481.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 879.922 ; gain = 481.008
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 880.293 ; gain = 481.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 879.922 ; gain = 481.008
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 880.293 ; gain = 481.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -413,8 +413,8 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT2 |     2|
-|2     |LUT3 |     1|
-|3     |LUT4 |     4|
+|2     |LUT4 |     1|
+|3     |LUT5 |     4|
 |4     |FDRE |     2|
 +------+-----+------+
 
@@ -426,11 +426,11 @@ Report Instance Areas:
 |2     |  U0     |lmb_bram_if_cntlr |     9|
 +------+---------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 879.922 ; gain = 481.008
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 880.293 ; gain = 481.273
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 321 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 879.922 ; gain = 191.207
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 879.922 ; gain = 481.008
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 880.293 ; gain = 192.715
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 880.293 ; gain = 481.273
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -440,12 +440,12 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 21 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 890.375 ; gain = 502.996
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 889.949 ; gain = 502.453
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/design_1_dlmb_bram_if_cntlr_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.xci
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/design_1_dlmb_bram_if_cntlr_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.xci
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Documents/GitHub/CSM152B_S23/project_3a/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/design_1_dlmb_bram_if_cntlr_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Documents/GitHub/CSM152B_S23/final/project_3a.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/design_1_dlmb_bram_if_cntlr_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_dlmb_bram_if_cntlr_0_utilization_synth.rpt -pb design_1_dlmb_bram_if_cntlr_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 890.375 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed May 17 13:39:48 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 889.949 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  2 12:38:35 2023...

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon May 22 14:01:06 2023
+| Date         : Fri Jun  2 12:39:43 2023
 | Host         : CS152B-08 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   27 |     0 |       106 | 25.47 |
+| Bonded IOB                  |   43 |     0 |       106 | 40.57 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -149,9 +149,9 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+| IBUF     |   26 |                  IO |
+| OBUFT    |   24 |                  IO |
 | OBUF     |   17 |                  IO |
-| IBUF     |   10 |                  IO |
-| OBUFT    |    8 |                  IO |
 +----------+------+---------------------+
 
 
@@ -173,7 +173,9 @@ Table of Contents
 | design_1_clk_wiz_0_0          |    1 |
 | design_1_axi_uartlite_0_0     |    1 |
 | design_1_axi_gpio_0_0         |    1 |
-| design_1_PmodKYPD_0_0         |    1 |
+| design_1_PmodOLED_0_0         |    1 |
+| design_1_PmodGYRO_0_0         |    1 |
+| design_1_PmodAMP2_0_0         |    1 |
 +-------------------------------+------+
 
 

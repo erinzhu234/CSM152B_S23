@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1685566863"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1685566863"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1685566863"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1685566863"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1685734653"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1685734653"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1685734653"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1685734653"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\design_1_microblaze_0_0\design_1_microblaze_0_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0"/>
@@ -56,7 +56,6 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_microblaze_0_axi_periph_0\design_1_microblaze_0_axi_periph_0.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_axi_periph"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -122,6 +121,30 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
+      <File Name="ip\design_1_PmodAMP2_0_0\design_1_PmodAMP2_0_0.xci" Type="IP">
+        <Instance HierarchyPath="PmodAMP2_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_PmodOLED_0_0\design_1_PmodOLED_0_0.xci" Type="IP">
+        <Instance HierarchyPath="PmodOLED_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_PmodGYRO_0_0\design_1_PmodGYRO_0_0.xci" Type="IP">
+        <Instance HierarchyPath="PmodGYRO_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
       <File Name="design_1.bmm" Type="BMM">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
@@ -149,22 +172,6 @@
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="ip\design_1_PmodGYRO_0_2\design_1_PmodGYRO_0_2.xci" Type="IP">
-        <Instance HierarchyPath="PmodGYRO_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_PmodOLEDrgb_0_0\design_1_PmodOLEDrgb_0_0.xci" Type="IP">
-        <Instance HierarchyPath="PmodOLEDrgb_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
       </File>
     </FileCollection>
   </CompositeFile>
