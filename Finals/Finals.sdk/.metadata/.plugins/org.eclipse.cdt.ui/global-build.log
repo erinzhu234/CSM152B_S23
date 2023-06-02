@@ -1,0 +1,2675 @@
+13:36:15 **** Build of project finals_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+13:36:27 **** Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	finals.elf
+'Finished building: finals.elf.size'
+' '
+13:36:29 **** Auto Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+13:37:51 **** Build of project finals_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+
+**** Build of configuration Debug for project finals ****
+
+Nothing to build for project finals
+13:49:49 **** Build of project proj_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+
+**** Build of configuration Debug for project proj ****
+
+Nothing to build for project proj
+
+****  of configuration Debug for project finals ****
+
+Nothing to build for project finals
+
+****  of configuration Debug for project finals ****
+
+Nothing to build for project finals
+13:52:46 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [finals.elf] Error 1
+13:52:53 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:41:13: fatal error: xintc.h: No such file or directory
+    #include "xintc.h"
+             ^~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+14:06:46 **** Clean-only build of configuration Debug for project finals ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  finals.elf.size  finals.elf
+' '
+14:06:47 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:26:10: fatal error: PmodGYRO.h: No such file or directory
+ #include "PmodGYRO.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+14:07:30 **** Auto Build of project finals_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:07:40 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20360	    304	   3216	  23880	   5d48	finals.elf
+'Finished building: finals.elf.size'
+' '
+14:07:57 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20360	    304	   3216	  23880	   5d48	finals.elf
+'Finished building: finals.elf.size'
+' '
+14:08:00 **** Auto Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:09:07 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:12:22 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:41:13: fatal error: xintc.h: No such file or directory
+    #include "xintc.h"
+             ^~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+14:19:52 **** Auto Build of project finals_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:20:02 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:41:13: fatal error: xintc.h: No such file or directory
+    #include "xintc.h"
+             ^~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+14:20:21 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:41:13: fatal error: xintc.h: No such file or directory
+    #include "xintc.h"
+             ^~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+14:21:01 **** Auto Build of project finals_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:21:11 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:41:0:
+../../finals_bsp/microblaze_0/include/xintc.h:222:10: fatal error: xintc_l.h: No such file or directory
+ #include "xintc_l.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+14:21:28 **** Auto Build of project finals_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:21:38 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:41:0:
+../../finals_bsp/microblaze_0/include/xintc.h:301:38: error: 'XPAR_INTC_MAX_NUM_INTR_INPUTS' undeclared here (not in a function); did you mean 'XPAR_XBRAM_NUM_INSTANCES'?
+  XIntc_VectorTableEntry HandlerTable[XPAR_INTC_MAX_NUM_INTR_INPUTS];
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                      XPAR_XBRAM_NUM_INSTANCES
+../src/main.c: In function 'DemoInitialize':
+../src/main.c:45:34: error: 'XPAR_INTC_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_GPIO_0_DEVICE_ID'?
+    #define INTC_DEVICE_ID        XPAR_INTC_0_DEVICE_ID
+                                  ^
+../src/main.c:96:7: note: in expansion of macro 'INTC_DEVICE_ID'
+       INTC_DEVICE_ID,
+       ^~~~~~~~~~~~~~
+../src/main.c:45:34: note: each undeclared identifier is reported only once for each function it appears in
+    #define INTC_DEVICE_ID        XPAR_INTC_0_DEVICE_ID
+                                  ^
+../src/main.c:96:7: note: in expansion of macro 'INTC_DEVICE_ID'
+       INTC_DEVICE_ID,
+       ^~~~~~~~~~~~~~
+../src/main.c:46:34: error: 'XPAR_INTC_0_PMODAMP2_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_PMODAMP2_0_DEVICE_ID'?
+    #define INTC_TMR_INTERRUPT_ID XPAR_INTC_0_PMODAMP2_0_VEC_ID
+                                  ^
+../src/main.c:97:7: note: in expansion of macro 'INTC_TMR_INTERRUPT_ID'
+       INTC_TMR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+14:23:45 **** Auto Build of project finals_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:23:55 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:41:0:
+../../finals_bsp/microblaze_0/include/xintc.h:301:38: error: 'XPAR_INTC_MAX_NUM_INTR_INPUTS' undeclared here (not in a function); did you mean 'XPAR_XBRAM_NUM_INSTANCES'?
+  XIntc_VectorTableEntry HandlerTable[XPAR_INTC_MAX_NUM_INTR_INPUTS];
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                      XPAR_XBRAM_NUM_INSTANCES
+../src/main.c: In function 'DemoInitialize':
+../src/main.c:45:34: error: 'XPAR_INTC_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_GPIO_0_DEVICE_ID'?
+    #define INTC_DEVICE_ID        XPAR_INTC_0_DEVICE_ID
+                                  ^
+../src/main.c:96:7: note: in expansion of macro 'INTC_DEVICE_ID'
+       INTC_DEVICE_ID,
+       ^~~~~~~~~~~~~~
+../src/main.c:45:34: note: each undeclared identifier is reported only once for each function it appears in
+    #define INTC_DEVICE_ID        XPAR_INTC_0_DEVICE_ID
+                                  ^
+../src/main.c:96:7: note: in expansion of macro 'INTC_DEVICE_ID'
+       INTC_DEVICE_ID,
+       ^~~~~~~~~~~~~~
+../src/main.c:46:34: error: 'XPAR_INTC_0_PMODAMP2_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_PMODAMP2_0_DEVICE_ID'?
+    #define INTC_TMR_INTERRUPT_ID XPAR_INTC_0_PMODAMP2_0_VEC_ID
+                                  ^
+../src/main.c:97:7: note: in expansion of macro 'INTC_TMR_INTERRUPT_ID'
+       INTC_TMR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+14:30:20 **** Auto Build of project proj_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+
+****  of configuration Debug for project proj ****
+
+Nothing to build for project proj
+14:30:53 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:34:10: fatal error: PmodAMP2.h: No such file or directory
+ #include "PmodAMP2.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+14:31:05 **** Auto Build of project finals_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+xintc_g.c:60:2: warning: missing initializer for field 'HandlerTable' of 'XIntc_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xintc_g.c:41:0:
+xintc.h:309:25: note: 'HandlerTable' declared here
+  XIntc_VectorTableEntry HandlerTable[XPAR_INTC_MAX_NUM_INTR_INPUTS];
+                         ^~~~~~~~~~~~
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:31:15 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoInitialize':
+../src/main.c:46:34: error: 'XPAR_INTC_0_PMODAMP2_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_PMODAMP2_0_DEVICE_ID'?
+    #define INTC_TMR_INTERRUPT_ID XPAR_INTC_0_PMODAMP2_0_VEC_ID
+                                  ^
+../src/main.c:97:7: note: in expansion of macro 'INTC_TMR_INTERRUPT_ID'
+       INTC_TMR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:46:34: note: each undeclared identifier is reported only once for each function it appears in
+    #define INTC_TMR_INTERRUPT_ID XPAR_INTC_0_PMODAMP2_0_VEC_ID
+                                  ^
+../src/main.c:97:7: note: in expansion of macro 'INTC_TMR_INTERRUPT_ID'
+       INTC_TMR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+14:39:09 **** Auto Build of project proj_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+xintc_g.c:60:2: warning: missing initializer for field 'HandlerTable' of 'XIntc_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xintc_g.c:41:0:
+xintc.h:309:25: note: 'HandlerTable' declared here
+  XIntc_VectorTableEntry HandlerTable[XPAR_INTC_MAX_NUM_INTR_INPUTS];
+                         ^~~~~~~~~~~~
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+
+****  of configuration Debug for project proj ****
+
+Nothing to build for project proj
+14:39:33 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:34:10: fatal error: PmodAMP2.h: No such file or directory
+ #include "PmodAMP2.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+14:39:51 **** Auto Build of project finals_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/PmodAMP2_v1_0/src"
+make -C microblaze_0/libsrc/PmodAMP2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPS..."
+"Running Make libs in microblaze_0/libsrc/PmodGYRO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGYRO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGYRO..."
+"Running Make libs in microblaze_0/libsrc/PmodOLED_v1_0/src"
+make -C microblaze_0/libsrc/PmodOLED_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodOLED..."
+OledDriver.c: In function 'OLED_Update':
+OledDriver.c:532:14: warning: unused variable 'icol' [-Wunused-variable]
+     int      icol;
+              ^~~~
+OledGrph.c: In function 'OLED_GetStdPattern':
+OledGrph.c:196:23: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     return rgbFillPat + 8*ipat;
+            ~~~~~~~~~~~^~~~~~~~
+OledGrph.c: In function 'OLED_FillRect':
+OledGrph.c:506:9: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8  bTmp;
+         ^~~~
+OledGrph.c: In function 'OLED_GetBmp':
+OledGrph.c:612:11: warning: variable 'bTmp' set but not used [-Wunused-but-set-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c: In function 'OLED_PutBmp':
+OledGrph.c:713:11: warning: unused variable 'bTmp' [-Wunused-variable]
+     u8    bTmp;
+           ^~~~
+OledGrph.c:706:11: warning: unused variable 'bDsp' [-Wunused-variable]
+     u8    bDsp;
+           ^~~~
+OledGrph.c: In function 'OLED_DrawChar':
+OledGrph.c:812:11: warning: unused variable 'ib' [-Wunused-variable]
+     int   ib;
+           ^~
+OledGrph.c:811:11: warning: variable 'pbBmp' set but not used [-Wunused-but-set-variable]
+     u8   *pbBmp;
+           ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:40:02 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21432	    332	   3356	  25120	   6220	finals.elf
+'Finished building: finals.elf.size'
+' '
+14:40:11 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:41:45 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:48:56 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:50:00 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21464	    332	   3356	  25152	   6240	finals.elf
+'Finished building: finals.elf.size'
+' '
+14:50:02 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:51:38 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21464	    332	   3356	  25152	   6240	finals.elf
+'Finished building: finals.elf.size'
+' '
+14:51:41 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:52:13 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:53:02 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16396	    304	   4052	  20752	   5110	finals.elf
+'Finished building: finals.elf.size'
+' '
+14:53:08 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:53:37 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+14:54:13 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:12:34 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:117:32: error: 'myDevice' undeclared (first use in this function); did you mean 'myDevice2'?
+           if (GYRO_Int1Status(&myDevice) != 0) {
+                                ^~~~~~~~
+                                myDevice2
+../src/main.c:117:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:151:18: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+        strcat(c, xAxis);
+                  ^~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:39:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int16_t {aka short int}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:249:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+At top level:
+../src/main.c:240:6: warning: 'DisableCaches' defined but not used [-Wunused-function]
+ void DisableCaches() {
+      ^~~~~~~~~~~~~
+../src/main.c:229:6: warning: 'EnableCaches' defined but not used [-Wunused-function]
+ void EnableCaches() {
+      ^~~~~~~~~~~~
+../src/main.c:223:6: warning: 'DemoCleanup' defined but not used [-Wunused-function]
+ void DemoCleanup() {
+      ^~~~~~~~~~~
+make: *** [src/main.o] Error 1
+15:13:49 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:147:18: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+        strcat(c, xAxis);
+                  ^~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:39:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int16_t {aka short int}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:245:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+At top level:
+../src/main.c:236:6: warning: 'DisableCaches' defined but not used [-Wunused-function]
+ void DisableCaches() {
+      ^~~~~~~~~~~~~
+../src/main.c:225:6: warning: 'EnableCaches' defined but not used [-Wunused-function]
+ void EnableCaches() {
+      ^~~~~~~~~~~~
+../src/main.c:219:6: warning: 'DemoCleanup' defined but not used [-Wunused-function]
+ void DemoCleanup() {
+      ^~~~~~~~~~~
+make: *** [src/main.o] Error 1
+15:15:43 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:147:18: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+        strcat(c, xAxis);
+                  ^~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:39:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int16_t {aka short int}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19092	    332	   4160	  23584	   5c20	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:16:46 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:147:18: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+        strcat(c, xAxis);
+                  ^~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:39:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int16_t {aka short int}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17980	    332	   4160	  22472	   57c8	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:17:30 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:147:18: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+        strcat(c, xAxis);
+                  ^~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/main.c:39:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:26:8: note: expected 'const char * restrict' but argument is of type 'int16_t {aka short int}'
+ char  *_EXFUN(strcat,(char *__restrict, const char *__restrict));
+        ^
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16192	    332	   4156	  20680	   50c8	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:21:23 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94096	   1496	   4224	  99816	  185e8	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:21:27 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:21:48 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94076	   1496	   4228	  99800	  185d8	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:21:51 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:22:03 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94096	   1496	   4224	  99816	  185e8	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:22:04 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:22:24 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:24:02 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92328	   1496	   4224	  98048	  17f00	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:24:27 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:24:43 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92328	   1496	   4224	  98048	  17f00	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:25:05 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92324	   1496	   4228	  98048	  17f00	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:25:17 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92328	   1496	   4224	  98048	  17f00	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:29:56 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94300	   1496	   4228	 100024	  186b8	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:30:00 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:31:14 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:31:17 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:32:37 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:32:39 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:33:07 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:33:32 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:34:10 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:35:20 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:35:32 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:35:48 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:35:58 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:36:22 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:39:14 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:39:57 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:40:07 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:40:28 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:40:49 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:44:37 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94352	   1496	   4224	 100072	  186e8	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:44:39 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:45:47 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:45:50 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:46:04 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:46:18 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:46:31 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:46:46 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:47:13 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:47:27 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94324	   1496	   4228	 100048	  186d0	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:49:11 **** Auto Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94452	   1496	   4228	 100176	  18750	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:49:14 **** Incremental Build of configuration Debug for project finals ****
+make all 
+make: Nothing to be done for `all'.
+15:49:30 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94452	   1496	   4228	 100176	  18750	finals.elf
+'Finished building: finals.elf.size'
+' '
+15:50:10 **** Incremental Build of configuration Debug for project finals ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'DemoRun':
+../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
+       int8_t temp = 0;
+              ^~~~
+../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
+       int16_t zAxis = 0;
+               ^~~~~
+../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
+       int16_t yAxis = 0;
+               ^~~~~
+../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
+    int irow, ib, i;
+                  ^
+../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
+    int irow, ib, i;
+              ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: finals.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: finals.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size finals.elf  |tee "finals.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94412	   1496	   4228	 100136	  18728	finals.elf
+'Finished building: finals.elf.size'
+' '

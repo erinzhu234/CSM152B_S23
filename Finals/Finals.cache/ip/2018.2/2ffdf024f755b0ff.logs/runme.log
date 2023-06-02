@@ -1,0 +1,1603 @@
+
+*** Running vivado
+    with args -log design_1_PmodAMP2_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_PmodAMP2_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_PmodAMP2_0_0.tcl -notrace
+Command: synth_design -top design_1_PmodAMP2_0_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10488 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 505.180 ; gain = 103.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_PmodAMP2_0_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/synth/design_1_PmodAMP2_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'PmodAMP2' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ipshared/d780/src/PmodAMP2.v:13]
+INFO: [Synth 8-6157] synthesizing module 'PmodAMP2_PWM_0_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_PWM_0_0/synth/PmodAMP2_PWM_0_0.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'PWM_v2_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_PWM_0_0/hdl/PWM_v2_0.sv:4]
+	Parameter NUM_PWM bound to: 1 - type: integer 
+	Parameter POLARITY bound to: 1'b1 
+	Parameter C_PWM_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_PWM_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PWM_AXI' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_PWM_0_0/hdl/PWM_AXI.sv:4]
+	Parameter NUM_PWM bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PWM_AXI' (1#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_PWM_0_0/hdl/PWM_AXI.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'PWM_v2_0' (2#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_PWM_0_0/hdl/PWM_v2_0.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'PmodAMP2_PWM_0_0' (3#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_PWM_0_0/synth/PmodAMP2_PWM_0_0.sv:56]
+INFO: [Synth 8-638] synthesizing module 'PmodAMP2_axi_gpio_0_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/synth/PmodAMP2_axi_gpio_0_0.vhd:84]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 3 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/synth/PmodAMP2_axi_gpio_0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 3 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1295]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1296]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b00 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (4#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b01 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (4#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b10 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (4#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b11 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (4#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (5#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (6#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (7#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+	Parameter C_DW bound to: 32 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 3 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_GPIO_WIDTH bound to: 3 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-226] default block is never used [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 0 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 3 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (8#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:486]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (9#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (10#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-256] done synthesizing module 'PmodAMP2_axi_gpio_0_0' (11#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/synth/PmodAMP2_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'PmodAMP2_axi_timer_0_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/synth/PmodAMP2_axi_timer_0_0.vhd:90]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ONE_TIMER_ONLY bound to: 0 - type: integer 
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'axi_timer' declared at 'c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2082' bound to instance 'U0' of component 'axi_timer' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/synth/PmodAMP2_axi_timer_0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_timer' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2141]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ONE_TIMER_ONLY bound to: 0 - type: integer 
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2106]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2107]
+INFO: [Synth 8-638] synthesizing module 'tc_core' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1698]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ONE_TIMER_ONLY bound to: 0 - type: integer 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_AWIDTH bound to: 5 - type: integer 
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+INFO: [Synth 8-638] synthesizing module 'mux_onehot_f' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+	Parameter C_DW bound to: 32 - type: integer 
+	Parameter C_NB bound to: 6 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY' (12#1) [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-3491] module 'MUXCY' declared at 'C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26616' bound to instance 'MUXCY_I' of component 'MUXCY' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:462]
+INFO: [Synth 8-256] done synthesizing module 'mux_onehot_f' (13#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'count_module' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1434]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1470]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+	Parameter C_NUM_BITS bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (14#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'count_module' (15#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-638] synthesizing module 'timer_control' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+	Parameter C_TRIG0_ASSERT bound to: 1'b1 
+	Parameter C_TRIG1_ASSERT bound to: 1'b1 
+	Parameter C_GEN0_ASSERT bound to: 1'b1 
+	Parameter C_GEN1_ASSERT bound to: 1'b1 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:917]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:998]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'READ_DONE0_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1070]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'READ_DONE1_I' to cell 'FDRSE' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1080]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (15#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'TCSR1_CE_reg' in module 'timer_control' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1002]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'Count_Down_reg' in module 'timer_control' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1117]
+WARNING: [Synth 8-6426] Mix of Sync and Async assignments to register 'Load_Load_Reg_reg' in module 'timer_control' in the same process may cause logic issues. 
+ Please split the sync and async parts into different processes [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1142]
+INFO: [Synth 8-256] done synthesizing module 'timer_control' (16#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:835]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'PWM_FF_I' to cell 'FDRS' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1904]
+INFO: [Synth 8-256] done synthesizing module 'tc_core' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:1698]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000011111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 5 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 31 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 31 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000001000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 3 - type: integer 
+	Parameter C_BAR bound to: 3'b111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (17#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_timer' (18#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:2141]
+INFO: [Synth 8-256] done synthesizing module 'PmodAMP2_axi_timer_0_0' (19#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/synth/PmodAMP2_axi_timer_0_0.vhd:90]
+WARNING: [Synth 8-350] instance 'axi_timer_0' of module 'PmodAMP2_axi_timer_0_0' requires 26 connections, but only 23 given [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ipshared/d780/src/PmodAMP2.v:384]
+INFO: [Synth 8-6157] synthesizing module 'PmodAMP2_pmod_bridge_0_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/synth/PmodAMP2_pmod_bridge_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:12]
+	Parameter Top_Row_Interface bound to: GPIO - type: string 
+	Parameter Bottom_Row_Interface bound to: Disabled - type: string 
+WARNING: [Synth 8-3848] Net in_top_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:87]
+WARNING: [Synth 8-3848] Net in_top_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:90]
+WARNING: [Synth 8-3848] Net in_bottom_bus_I in module/entity pmod_concat does not have driver. [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:94]
+WARNING: [Synth 8-3848] Net in_bottom_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:97]
+WARNING: [Synth 8-3848] Net in_bottom_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:100]
+WARNING: [Synth 8-3848] Net in0_I in module/entity pmod_concat does not have driver. [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:104]
+WARNING: [Synth 8-3848] Net in1_I in module/entity pmod_concat does not have driver. [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:105]
+WARNING: [Synth 8-3848] Net in2_I in module/entity pmod_concat does not have driver. [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:106]
+WARNING: [Synth 8-3848] Net in3_I in module/entity pmod_concat does not have driver. [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (20#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'PmodAMP2_pmod_bridge_0_0' (21#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/synth/PmodAMP2_pmod_bridge_0_0.v:56]
+WARNING: [Synth 8-350] instance 'pmod_bridge_0' of module 'PmodAMP2_pmod_bridge_0_0' requires 27 connections, but only 26 given [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ipshared/d780/src/PmodAMP2.v:408]
+INFO: [Synth 8-6157] synthesizing module 'PmodAMP2_xlconcat_0_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_xlconcat_0_0/synth/PmodAMP2_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_xlconcat_0_0/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 3 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 4 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (22#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_xlconcat_0_0/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'PmodAMP2_xlconcat_0_0' (23#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_xlconcat_0_0/synth/PmodAMP2_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'PmodAMP2_xlconstant_0_0' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_xlconstant_0_0/synth/PmodAMP2_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (24#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_xlconstant_0_0/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PmodAMP2_xlconstant_0_0' (25#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_xlconstant_0_0/synth/PmodAMP2_xlconstant_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'PmodAMP2' (26#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ipshared/d780/src/PmodAMP2.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PmodAMP2_0_0' (27#1) [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/synth/design_1_PmodAMP2_0_0.v:56]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_I[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_I[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in0_I
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in1_I
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in2_I
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in3_I
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_uart_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_top_i2c_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[3]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[2]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_uart_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_O[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_O[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_T[1]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in_bottom_i2c_gpio_bus_T[0]
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in0_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in1_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in2_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in3_O
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in0_T
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in1_T
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in2_T
+WARNING: [Synth 8-3331] design pmod_concat has unconnected port in3_T
+WARNING: [Synth 8-3331] design address_decoder__parameterized0 has unconnected port Address_In_Erly[3]
+WARNING: [Synth 8-3331] design address_decoder__parameterized0 has unconnected port Address_In_Erly[4]
+WARNING: [Synth 8-3331] design address_decoder__parameterized0 has unconnected port Bus_RNW
+WARNING: [Synth 8-3331] design slave_attachment__parameterized0 has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design slave_attachment__parameterized0 has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design slave_attachment__parameterized0 has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design slave_attachment__parameterized0 has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_aclk
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_resetn
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[31]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[30]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[29]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[28]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[27]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[26]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[25]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[24]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[23]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[22]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[21]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[20]
+WARNING: [Synth 8-3331] design cdc_sync__parameterized0 has unconnected port prmry_vect_in[19]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 567.941 ; gain = 166.539
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 567.941 ; gain = 166.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 567.941 ; gain = 166.539
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 126 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_ooc.xdc] for cell 'inst'
+WARNING: [Designutils 20-1758] instance inst wraps a black box. Constraint reading is skipped for elaborated designs in this case. Skipping constraint file 'c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_pmod_bridge_0_0/PmodAMP2_pmod_bridge_0_0_board.xdc'.
+Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/PmodAMP2_axi_timer_0_0.xdc] for cell 'inst/axi_timer_0/U0'
+Finished Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/PmodAMP2_axi_timer_0_0.xdc] for cell 'inst/axi_timer_0/U0'
+Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/PmodAMP2_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/PmodAMP2_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/PmodAMP2_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/PmodAMP2_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc] for cell 'inst'
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc:3]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc:4]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc:5]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc:6]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc:7]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc:8]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc:9]
+CRITICAL WARNING: [Common 17-69] Command failed: BOARD_PART_PIN cannot be assigned to more than one port [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc:10]
+Finished Parsing XDC File [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/design_1_PmodAMP2_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.runs/design_1_PmodAMP2_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.runs/design_1_PmodAMP2_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.runs/design_1_PmodAMP2_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_PmodAMP2_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_PmodAMP2_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 62 instances were transformed.
+  FDR => FDRE: 36 instances
+  FDRS => FDRS (FDRE, LUT2, VCC): 1 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 25 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 902.641 ; gain = 1.559
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 902.641 ; gain = 501.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 902.641 ; gain = 501.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/pmod_bridge_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/axi_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/PWM_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/pmod_bridge_0/inst. (constraint file  C:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.runs/design_1_PmodAMP2_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.runs/design_1_PmodAMP2_0_0_synth_1/dont_touch.xdc, line 32).
+Applied set_property DONT_TOUCH = true for inst/axi_timer_0/U0. (constraint file  C:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.runs/design_1_PmodAMP2_0_0_synth_1/dont_touch.xdc, line 39).
+Applied set_property DONT_TOUCH = true for inst/axi_gpio_0/U0. (constraint file  C:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.runs/design_1_PmodAMP2_0_0_synth_1/dont_touch.xdc, line 44).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 902.641 ; gain = 501.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_timer_v2_0_vh_rfs.vhd:176]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'reg_data_out_reg' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_PWM_0_0/hdl/PWM_AXI.sv:388]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 902.641 ; gain = 501.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 10    
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 53    
++---Muxes : 
+	   3 Input     33 Bit        Muxes := 2     
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 9     
+	   5 Input     32 Bit        Muxes := 5     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 10    
+	   7 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 41    
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PWM_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   5 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module PWM_v2_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module pselect_f 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module slave_attachment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module GPIO_Core 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_gpio 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module counter_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module count_module 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module timer_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module pselect_f__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module address_decoder__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 10    
+Module slave_attachment__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
+WARNING: [Synth 8-6014] Unused sequential element bus2ip_reset_reg was removed.  [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
+WARNING: [Synth 8-6014] Unused sequential element AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].cs_out_i_reg was removed.  [c:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.srcs/sources_1/bd/design_1/ip/design_1_PmodAMP2_0_0/src/PmodAMP2_axi_timer_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2004]
+INFO: [Synth 8-3886] merging instance 'inst/PWM_0/inst/PWM_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/PWM_0/inst/PWM_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PWM_0/\inst/PWM_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/PWM_0/inst/PWM_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/PWM_0/inst/PWM_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PWM_0/\inst/PWM_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[31]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[30]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[29]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[28]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[27]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[26]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[25]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[24]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[23]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[22]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[21]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[20]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[19]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[18]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[17]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[16]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[15]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[14]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[13]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[12]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[11]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[10]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[9]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[8]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[7]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[6]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[5]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[4]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[3]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[2]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[1]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/reg_data_out_reg[0]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/PWM_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module PmodAMP2_PWM_0_0.
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[28]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[27]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[26]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[25]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[24]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[23]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[22]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[21]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[20]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[19]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[18]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[17]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[16]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[15]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[14]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[13]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[12]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[11]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[10]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[9]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[8]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[7]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[6]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[5]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[4]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[3]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[2]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[1]' (FDR) to 'inst/axi_gpio_0/U0/ip2bus_data_i_D1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[3]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[4]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[9]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[10]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]' (FDRE) to 'inst/axi_gpio_0/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_gpio_0/U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[0].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[1].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[2].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[7]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[6]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[5]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[4]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[1]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[0]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/axi_timer_0/U0/\AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS2/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (TC_CORE_I/TIMER_CONTROL_I/INPUT_DOUBLE_REGS2/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[1]) is unused and will be removed from module axi_timer.
+INFO: [Synth 8-3332] Sequential element (AXI4_LITE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[0]) is unused and will be removed from module axi_timer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 902.641 ; gain = 501.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 902.641 ; gain = 501.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 921.184 ; gain = 519.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 928.117 ; gain = 526.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 928.117 ; gain = 526.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 928.117 ; gain = 526.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 928.117 ; gain = 526.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 928.117 ; gain = 526.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 928.117 ; gain = 526.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 928.117 ; gain = 526.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    32|
+|2     |LUT1   |    10|
+|3     |LUT2   |   112|
+|4     |LUT3   |   113|
+|5     |LUT4   |   150|
+|6     |LUT5   |    62|
+|7     |LUT6   |   121|
+|8     |MUXCY  |    64|
+|9     |FDR    |    12|
+|10    |FDRE   |   546|
+|11    |FDSE   |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------------------------------------------------------------+---------------------------------+------+
+|      |Instance                                                                      |Module                           |Cells |
++------+------------------------------------------------------------------------------+---------------------------------+------+
+|1     |top                                                                           |                                 |  1227|
+|2     |  inst                                                                        |PmodAMP2                         |  1227|
+|3     |    PWM_0                                                                     |PmodAMP2_PWM_0_0                 |   448|
+|4     |      inst                                                                    |PWM_v2_0                         |   448|
+|5     |        PWM_AXI_inst                                                          |PWM_AXI                          |   268|
+|6     |    axi_gpio_0                                                                |PmodAMP2_axi_gpio_0_0            |    98|
+|7     |      U0                                                                      |axi_gpio                         |    98|
+|8     |        AXI_LITE_IPIF_I                                                       |axi_lite_ipif                    |    65|
+|9     |          I_SLAVE_ATTACHMENT                                                  |slave_attachment                 |    65|
+|10    |            I_DECODER                                                         |address_decoder                  |    17|
+|11    |              \MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f                        |     1|
+|12    |              \MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized1        |     1|
+|13    |        gpio_core_1                                                           |GPIO_Core                        |    27|
+|14    |    axi_timer_0                                                               |PmodAMP2_axi_timer_0_0           |   681|
+|15    |      U0                                                                      |axi_timer                        |   681|
+|16    |        AXI4_LITE_I                                                           |axi_lite_ipif__parameterized0    |   201|
+|17    |          I_SLAVE_ATTACHMENT                                                  |slave_attachment__parameterized0 |   201|
+|18    |            I_DECODER                                                         |address_decoder__parameterized0  |   129|
+|19    |              \MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized3        |     1|
+|20    |              \MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized5        |     1|
+|21    |              \MEM_DECODE_GEN[0].PER_CE_GEN[4].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized7        |     1|
+|22    |              \MEM_DECODE_GEN[0].PER_CE_GEN[5].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized8        |     1|
+|23    |              \MEM_DECODE_GEN[0].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized9        |     1|
+|24    |              \MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized10       |     1|
+|25    |        TC_CORE_I                                                             |tc_core                          |   480|
+|26    |          COUNTER_0_I                                                         |count_module                     |   139|
+|27    |            COUNTER_I                                                         |counter_f_3                      |   107|
+|28    |          \GEN_SECOND_TIMER.COUNTER_1_I                                       |count_module_0                   |   172|
+|29    |            COUNTER_I                                                         |counter_f                        |   140|
+|30    |          READ_MUX_I                                                          |mux_onehot_f                     |    64|
+|31    |          TIMER_CONTROL_I                                                     |timer_control                    |   104|
+|32    |            INPUT_DOUBLE_REGS                                                 |cdc_sync__parameterized0         |     5|
+|33    |            INPUT_DOUBLE_REGS2                                                |cdc_sync__parameterized0_1       |     5|
+|34    |            INPUT_DOUBLE_REGS3                                                |cdc_sync__parameterized0_2       |    13|
+|35    |    pmod_bridge_0                                                             |PmodAMP2_pmod_bridge_0_0         |     0|
+|36    |      inst                                                                    |pmod_concat                      |     0|
+|37    |    xlconcat_0                                                                |PmodAMP2_xlconcat_0_0            |     0|
+|38    |    xlconstant_0                                                              |PmodAMP2_xlconstant_0_0          |     0|
++------+------------------------------------------------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 928.117 ; gain = 526.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 97 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 928.117 ; gain = 192.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 928.117 ; gain = 526.715
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 32 instances
+  FDR => FDRE: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+422 Infos, 122 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 928.117 ; gain = 537.770
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Documents/GitHub/CSM152B_S23/Finals/Finals.runs/design_1_PmodAMP2_0_0_synth_1/design_1_PmodAMP2_0_0.dcp' has been generated.
