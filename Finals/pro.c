@@ -97,133 +97,76 @@ void DemoInitialize() {
 
 void DemoRun() {
 	//oled vars
-   int irow, ib, i;
-   u8 *pat;
-   char c;
+    int irow, ib, i;
+    u8 *pat;
+    char c;
 
-   //gyro vars
-   int16_t xAxis = 0;
-      int16_t yAxis = 0;
-      int16_t zAxis = 0;
-      int8_t temp = 0;
-      int trig = 0;
+    //gyro vars
+    int16_t xAxis = 0;
+    int16_t yAxis = 0;
+    int16_t zAxis = 0;
+    int8_t temp = 0;
+    int trig = 0;
 
-   xil_printf("UART and SPI opened for PmodOLED Demo\n\r");
+    xil_printf("UART and SPI opened for PmodOLED Demo\n\r");
 
-   while (1) {
-	   //gyro
-	   usleep(500000);
+    while (1) {
+        //gyro
+        usleep(500000);
 
-	         if (GYRO_Int1Status(&myDevice2) != 0) {
-	            xil_printf("\x1B[2J");
-	            xil_printf("\x1B[H");
-	            xil_printf("Threshold reached\n\r");
-	            trig = 1;
-	         }
-	         if (GYRO_Int2Status(&myDevice2) != 0) {
-	            if (trig == 1) {
-	               trig = 0;
-	            } else {
-	               xil_printf("\x1B[2J"); // Clear screen
-	               xil_printf("\x1B[H");  // Reset cursor to 0,0
-	            }
-	            xil_printf("Data is ready\n\r\n\r");
-	         }
-	   //oled
-      xil_printf("entering loop\r\n");
-      // Choosing Fill pattern 0
-      pat = OLED_GetStdPattern(0);
-      OLED_SetFillPattern(&myDevice1, pat);
-      // Turn automatic updating off
-      OLED_SetCharUpdate(&myDevice1, 0);
+        if (GYRO_Int1Status(&myDevice2) != 0) {
+            xil_printf("\x1B[2J");
+            xil_printf("\x1B[H");
+            xil_printf("Threshold reached\n\r");
+            trig = 1;
+        }
+        if (GYRO_Int2Status(&myDevice2) != 0) {
+            if (trig == 1) {
+                trig = 0;
+            } else {
+                xil_printf("\x1B[2J"); // Clear screen
+                xil_printf("\x1B[H");  // Reset cursor to 0,0
+            }
+            xil_printf("Data is ready\n\r\n\r");
+        }
+	    //oled
+        xil_printf("entering loop\r\n");
+        // Choosing Fill pattern 0
+        pat = OLED_GetStdPattern(0);
+        OLED_SetFillPattern(&myDevice1, pat);
+        // Turn automatic updating off
+        OLED_SetCharUpdate(&myDevice1, 0);
 
-      // Draw a rectangle over writing then slide the rectangle down slowly
-      // displaying all writing
-      for (irow = 0; irow < OledRowMax; irow++) {
-    	  xAxis = GYRO_getX(&myDevice2);
-    	  	            yAxis = GYRO_getY(&myDevice2);
-    	  	            zAxis = GYRO_getZ(&myDevice2);
-    	  char c[] = "x axis: ";
-    	  char x[10];
-    	  sprintf(x, "0x%04x", xAxis);
-    	  strcat(c, x);
-    	  OLED_ClearBuffer(&myDevice1);
-         OLED_SetCursor(&myDevice1, 0, 0);
-         OLED_PutString(&myDevice1, c);
-         OLED_SetCursor(&myDevice1, 0, 1);
-         OLED_PutString(&myDevice1, "y axis: ");
-         OLED_SetCursor(&myDevice1, 0, 2);
+        xAxis = GYRO_getX(&myDevice2);
+        yAxis = GYRO_getY(&myDevice2);
+        zAxis = GYRO_getZ(&myDevice2);
+        char c[] = "x axis: ";
+        char x[10];
+        sprintf(x, "0x%04x", xAxis);
+        strcat(c, x);
+        OLED_ClearBuffer(&myDevice1);
+        OLED_SetCursor(&myDevice1, 0, 0);
+        OLED_PutString(&myDevice1, c);
+        OLED_SetCursor(&myDevice1, 0, 1);
+        OLED_PutString(&myDevice1, "y axis: ");
+        OLED_SetCursor(&myDevice1, 0, 2);
 
 
-         pat = OLED_GetStdPattern(1);
-		 OLED_SetFillPattern(&myDevice1, pat);
-         OLED_MoveTo(&myDevice1, 0, 20);
-	     OLED_FillRect(&myDevice1, 10, 30);
-	     OLED_DrawRect(&myDevice1, 10, 30);
+        pat = OLED_GetStdPattern(1);
+        OLED_SetFillPattern(&myDevice1, pat);
+        OLED_MoveTo(&myDevice1, 0, 20);
+        OLED_FillRect(&myDevice1, 10, 30);
+        OLED_DrawRect(&myDevice1, 10, 30);
 
-	     pat = OLED_GetStdPattern(7);
-	     OLED_SetFillPattern(&myDevice1, pat);
-	     OLED_MoveTo(&myDevice1, 10, 20);
-		 OLED_FillRect(&myDevice1, 128, 30);
-		 OLED_DrawRect(&myDevice1, 128, 30);
+        pat = OLED_GetStdPattern(7);
+        OLED_SetFillPattern(&myDevice1, pat);
+        OLED_MoveTo(&myDevice1, 10, 20);
+        OLED_FillRect(&myDevice1, 128, 30);
+        OLED_DrawRect(&myDevice1, 128, 30);
 
-         OLED_Update(&myDevice1);
-         usleep(100000000);
-      }
-//
-//      sleep(1);
-//      // Blink the display three times.
-//      for (i = 0; i < 3; i++) {
-//         OLED_DisplayOff(&myDevice1);
-//         usleep(500000);
-//         OLED_DisplayOn(&myDevice1);
-//         usleep(500000);
-//      }
-//      sleep(2);
-//
-//      // Now erase the characters from the display
-//      for (irow = OledRowMax - 1; irow >= 0; irow--) {
-//         OLED_SetDrawColor(&myDevice1, 1);
-//         OLED_SetDrawMode(&myDevice1, OledModeSet);
-//         OLED_MoveTo(&myDevice1, 0, irow);
-//         OLED_LineTo(&myDevice1, 127, irow);
-//         OLED_Update(&myDevice1);
-//         usleep(25000);
-//         OLED_SetDrawMode(&myDevice1, OledModeXor);
-//         OLED_MoveTo(&myDevice1, 0, irow);
-//         OLED_LineTo(&myDevice1, 127, irow);
-//         OLED_Update(&myDevice1);
-//      }
-//
-//      sleep(1);
-//
-//      // Draw a rectangle in center of screen
-//      // Display the 8 different patterns available
-//      OLED_SetDrawMode(&myDevice1, OledModeSet);
-//
-//      for (ib = 1; ib < 8; ib++) {
-//         OLED_ClearBuffer(&myDevice1);
-//         pat = OLED_GetStdPattern(ib);
-//         OLED_SetFillPattern(&myDevice1, pat);
-//         OLED_MoveTo(&myDevice1, 55, 1);
-//         OLED_FillRect(&myDevice1, 75, 27);
-//         OLED_DrawRect(&myDevice1, 75, 27);
-//         OLED_Update(&myDevice1);
-//
-//         sleep(1);
-//      }
-
-#ifdef __MICROBLAZE__
-      c = 'q';
-#else
-      xil_printf("(q)uit or any key to continue:\n\r");
-      c = inbyte();
-#endif
-
-      if (c == 'q' || c == 'Q')
-         break;
-   }
-   xil_printf("Exiting PmodOLED Demo\n\r");
+        OLED_Update(&myDevice1);
+        usleep(100000000);
+    }
 }
 
 void DemoCleanup() {
