@@ -3,12 +3,15 @@
 /* ------------------------------------------------------------ */
 
 #include <stdio.h>
+#include <cstdlib>
 #include "PmodOLED.h"
 #include "sleep.h"
 #include "xil_cache.h"
 #include "xil_printf.h"
 #include "xparameters.h"
 #include "PmodJSTK.h"
+
+using namespace std;
 
 /* ------------------------------------------------------------ */
 /*                  Global Variables                            */
@@ -68,14 +71,28 @@ void Initialize() {
 }
 
 void GameWin(){
+    // TODO: implement game win
+    // TODO: print something on LED screen
+    // TODO: play some music? 
     return;
 }
 
 void GameLose(){
+    // TODO: implement game lose
+    // TODO: print something on LED screen
+    // TODO: play some music?
     return;
 }
 
 bool GameRun() {
+
+    // TODO: map x position to pitch position
+    // TODO: map x pos and pitch pos to bar pos
+    // TODO: replace the position line into "too high" or "too low" & other info
+    // TODO: add a count for telling that the player wins if pitch matches and keeps for some time
+    // TODO: return true if player wins
+    // TODO: add a time counter, if time reaches a certain value, game loses and return false
+
     //oled vars
     int irow, ib, i;
     u8 *pat;
@@ -84,6 +101,8 @@ bool GameRun() {
 
     //jstk vars
     JSTK_DataPacket rawdata;
+
+    int pitch = (rand() % 7) + 1;
 
     while (1) {
 
