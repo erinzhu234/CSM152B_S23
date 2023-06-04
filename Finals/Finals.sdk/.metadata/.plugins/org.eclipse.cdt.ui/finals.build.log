@@ -1,37 +1,6 @@
-15:50:10 **** Incremental Build of configuration Debug for project finals ****
+14:43:51 **** Incremental Build of configuration Debug for project finals ****
 make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../finals_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'DemoRun':
-../src/main.c:108:14: warning: unused variable 'temp' [-Wunused-variable]
-       int8_t temp = 0;
-              ^~~~
-../src/main.c:107:15: warning: variable 'zAxis' set but not used [-Wunused-but-set-variable]
-       int16_t zAxis = 0;
-               ^~~~~
-../src/main.c:106:15: warning: variable 'yAxis' set but not used [-Wunused-but-set-variable]
-       int16_t yAxis = 0;
-               ^~~~~
-../src/main.c:100:18: warning: unused variable 'i' [-Wunused-variable]
-    int irow, ib, i;
-                  ^
-../src/main.c:100:14: warning: unused variable 'ib' [-Wunused-variable]
-    int irow, ib, i;
-              ^~
-'Finished building: ../src/main.c'
-' '
-'Building target: finals.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../finals_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "finals.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: finals.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size finals.elf  |tee "finals.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  94412	   1496	   4228	 100136	  18728	finals.elf
-'Finished building: finals.elf.size'
-' '
+make: Nothing to be done for `all'.
 
-15:50:11 Build Finished (took 921ms)
+14:43:51 Build Finished (took 188ms)
 
