@@ -97,6 +97,7 @@ bool GameRun() {
     int irow, ib, i;
     u8 *pat;
     char c;
+    OLED_SetCharUpdate(&oled, 1);
     //261 - 523
 
     //jstk vars
@@ -107,13 +108,6 @@ bool GameRun() {
     while (1) {
 
         rawdata = JSTK_getDataPacket(&joystick);
-
-
-        // Choosing Fill pattern 0
-        pat = OLED_GetStdPattern(0);
-        OLED_SetFillPattern(&oled, pat);
-        // Turn automatic updating off
-        OLED_SetCharUpdate(&oled, 1);
 
         char x_str[] = "x axis: ";
         char y_str[] = "y axis: ";
