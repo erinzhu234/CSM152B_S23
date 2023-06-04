@@ -26,7 +26,9 @@ PmodOLED oled;
 /* ------------------------------------------------------------ */
 
 void Initialize();
-void GameRun();
+void GameWin();
+void GameLose();
+bool GameRun();
 void Cleanup();
 void EnableCaches();
 void DisableCaches();
@@ -43,7 +45,12 @@ const u8 invert = 0x0; // true = whitebackground/black letters
 
 int main() {
    Initialize();
-   GameRun();
+   if(GameRun()){
+    GameWin();
+   }
+   else{
+    GameLose();
+   }
    Cleanup();
 
    return 0;
@@ -60,8 +67,15 @@ void Initialize() {
     );
 }
 
+void GameWin(){
+    return;
+}
 
-void GameRun() {
+void GameLose(){
+    return;
+}
+
+bool GameRun() {
     //oled vars
     int irow, ib, i;
     u8 *pat;
@@ -97,22 +111,25 @@ void GameRun() {
         OLED_SetCursor(&oled, 0, 1);
         OLED_PutString(&oled, y_str);
 
+        int bar_pos = 10;
+
         pat = OLED_GetStdPattern(1);
         OLED_SetFillPattern(&oled, pat);
         OLED_MoveTo(&oled, 0, 20);
-        OLED_FillRect(&oled, 10, 30);
-        OLED_DrawRect(&oled, 10, 30);
+        OLED_FillRect(&oled, bar_pos, 30);
+        OLED_DrawRect(&oled, bar_pos, 30);
 
         pat = OLED_GetStdPattern(7);
         OLED_SetFillPattern(&oled, pat);
-        OLED_MoveTo(&oled, 10, 20);
-        OLED_FillRect(&oled, 128, 30);
-        OLED_DrawRect(&oled, 128, 30);
+        OLED_MoveTo(&oled, bar_pos, 20);
+        OLED_FillRect(&oled, 100, 30);
+        OLED_DrawRect(&oled, 100, 30);
 
         OLED_Update(&oled);
         usleep(100000);
     }
 
+    return true;
 }
 
 void Cleanup() {
