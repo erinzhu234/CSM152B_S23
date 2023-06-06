@@ -328,6 +328,91 @@ const char* note_string(int string){
 	return x;
 }
 
+void ShortVictory() {
+    AMP2_start(&amp);
+    DemoSetFrequency(587);
+    usleep(100000);
+    DemoSetFrequency(783);
+    usleep(400000);
+    AMP2_stop(&amp);
+}
+
+void ShortLose() {
+    AMP2_start(&amp);
+    DemoSetFrequency(349);
+    usleep(250000);
+    DemoSetFrequency(330);
+    usleep(250000);
+    DemoSetFrequency(311);
+    usleep(500000);
+    AMP2_stop(&amp);
+}
+
+void LongVictory(){
+    //145833
+    AMP2_start(&amp);
+    DemoSetFrequency(196);
+    usleep(145833);
+    DemoSetFrequency(261)
+    usleep(145833);
+    DemoSetFrequency(330);
+    usleep(145833);
+    DemoSetFrequency(392);
+    usleep(145833);
+    DemoSetFrequency(523);
+    usleep(145833);
+    DemoSetFrequency(659);
+    usleep(145833);
+    DemoSetFrequency(784);
+    usleep(437499);
+    DemoSetFrequency(659);
+    usleep(437499);
+
+    DemoSetFrequency(207);
+    usleep(145833);
+    DemoSetFrequency(262);
+    usleep(145833);
+    DemoSetFrequency(311);
+    usleep(145833);
+    DemoSetFrequency(415);
+    usleep(145833);
+    DemoSetFrequency(523);
+    usleep(145833);
+    DemoSetFrequency(622);
+    usleep(145833);
+    DemoSetFrequency(831);
+    usleep(437499);
+    DemoSetFrequency(659);
+    usleep(437499);
+
+    DemoSetFrequency(293);
+    usleep(145833);
+    DemoSetFrequency(294);
+    usleep(145833);
+    DemoSetFrequency(349);
+    usleep(145833);
+    DemoSetFrequency(466);
+    usleep(145833);
+    DemoSetFrequency(587);
+    usleep(145833);
+    DemoSetFrequency(698);
+    usleep(145833);
+    DemoSetFrequency(932);
+    usleep(437499);
+    DemoSetFrequency(987);
+    usleep(145833);
+    DemoSetFrequency(987);
+    usleep(145833);
+    DemoSetFrequency(987);
+    usleep(145833);
+    DemoSetFrequency(1046);
+    usleep(437499);
+    usleep(437499);
+    usleep(437499);
+    usleep(437499);
+    AMP2_stop(&amp);
+}
+
 void DemoRun() {
 	//oled vars
    u8 *pat;
